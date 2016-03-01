@@ -1,0 +1,47 @@
+categories:
+  - &general 一般
+  - &study 学習
+  - &program プログラム
+  - &illust イラスト
+  - &curation キュレーション
+items:
+  - name: Twitter
+    category: *general
+    url: https://twitter.com/
+    comment: 閲覧したページや作業していること、加工した画像などをつぶやいています。
+  - name: blog
+    category: *general
+    url: http://program-blog.net/
+    comment: 私の個人ブログです。IT技術系の記事を書いていましたが全てQiitaに移行しました。今後はその他の調査記録や雑感を書いていきたいと思います。文章を書くのが好きなのでその受け皿になりそうです。
+  - name: Google+
+    category: *general
+    url: https://plus.google.com/u/0/101268398918699564365/posts
+    comment: gmailとGoogle+コミュニティのために使っています。とにかく使いづらい印象です。
+  - name: lang-8
+    category: *study
+    url: http://lang-8.com/
+    comment: 互いの母国語で、互いの日記を相互添削するサービスです。これを使って英語への抵抗が減った気がします。
+  - name: Qiita
+    category: *program
+    url: http://qiita.com/mitsuru793
+    comment: blogの技術系を記事はこちらに移行しました。よく使う内容などは、別途静的ジェネレータのサイトにまとめたいなと考えています。
+  - name: GitHub
+    category: *program
+    url: https://github.com/mitsuru793
+    comment: 公開できるリポジトリはここに公開しています。使ってて楽しい方かと。
+  - name: Gist
+    category: *program
+    url: https://gist.github.com/mitsuru793
+    comment: ファイルの整理が苦手なので、Twitterのようにとりあえず投げ込んでおくといった使い方をしています。クラウドなのでローカルが壊れても消える心配がないです。ローカルにもバックアップを自動同期できる仕組みを作らないとな。
+  - name: Pixiv
+    category: *illust
+    url: http://pixiv.me/mitsuru793
+    comment: photoshopで加工した画像を投稿しています。絵は描けません。ブックマーク機能はPinterestで代用しています。
+  - name: 加工屋 - コミュニティ - Google+
+    category: *illust
+    url: https://plus.google.com/u/0/communities/111087201794629594984
+    comment: 「一人じゃなかなか続かないけど、誰かと一緒なら楽しく続けられる」 画像加工がメイン（現在）のコミュニティを作りました。チュートリアルを選んで、皆で取り組んでいます。興味がある場合はtwitterなどでご連絡下さい。
+  - name: Pinterest
+    category: *curation
+    url: https://jp.pinterest.com/mitsuru793/
+    comment: 日本語のポスターを探す方法を模索している時に知りました。画像のスクラップ帳が作れるサービスです。画像の引用元も自動で記録されるのでとても便利です。

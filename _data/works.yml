@@ -1,0 +1,59 @@
+categories:
+  - &built-in 組み込み
+  - &web web
+  - &library library
+items:
+  - name: LEDサイコロ
+    category: *built-in
+    tech: [pic, assembly]
+    comment: 6個のLEDでサイコロを表現。様々な点滅パターンを実装。
+  - name: ライントレーサー
+    category: *built-in
+    tech: [μITRON, C]
+    comment: 黒い線をセンサーで読み取り、自走するロボットを組み立てました。
+  - name: 自分の音読回数を記録
+    category: *web
+    tech: [PHP, MySQL, Ajax]
+    comment: 英語の音読回数と感想を記録して、グラフで見返すことができます。
+  - name: ゲームの戦略を作図
+    category: *web
+    tech: [Rails, Backbone.js]
+    comment: 複数人で開発。MOVAという戦略ゲームに使われるマップ(画像)の上に、線を引いたりアイコンを置けるツールです。生のJavaScriptをBackbone.jsに移行する部分を担当しました。
+  - name: ゲームのキャラクター性能比較サイト
+    category: *web
+    tech: [Rails, Vue.js]
+    comment: 対戦ゲームのキャラクターの性能を調べて記録して、ランキングで比較することができます。各キャラクターを基準に、相対表示をすることも可能です。
+  - name: 簡易ORM
+    category: *library
+    tech: [Python]
+    comment: メタクラスを使用。1つのクラスに、1つのテーブルのフィールド名をプロパティとして定義するだけで、自動でメソッドを構築してくれます。比較演算子の動作を変えたりしました。
+  - name: 学習サイトのスクレイピング
+    category: *web
+    tech: [Rails, Sidekiq]
+    comment: ドットインストールという学習サイトをスクレイピングして、各レッスンの内容を1ページで俯瞰できるようにしました。
+  - name: タイマー
+    category: smartphone
+    tech: [Java, Android]
+    comment: ラップタイムを計れるGUIアプリ。
+  - name: リンクチェッカー
+    category: *web
+    tech: [Python, JavaScript]
+    comment: URLの一覧からリンク切れを検出します。
+  - name: URL整形
+    category: *web
+    tech: [JavaScript]
+    comment: URLのリストをcsvに変換して、ツリー構造にします。社員の人に頼まれて作りました。
+  - name: 数字の桁を揃える
+    category: *library
+    tech: [JavaScript]
+    comment: 好きな文字でバインディングして、桁を揃えることが出来ます。整数と小数、別々に詰め物を設定することができます。
+  - name: キャラクターのステータスを扱う
+    category: *library
+    tech: [JavaScript]
+    comment: キャラクターのステータスをモデルとして扱えるクラスです。ステータスの初期値、レベルアップ時の増加値を指定すれば、自動で現在のレベルのステータス値を取得するプロパティを定義してくれます。
+  - name: 夏に関するツイートを自動収集
+    category: *web
+    tech: [Rails, sidekiq]
+    comment: 夏に関するツイートをDBに記録します。
+  - name: アニメーション、画像
+    comment: POV-Ray, Photoshop, After Effectsを使いました。趣味でアイコン用の画像や、アニメーションを作成しています。

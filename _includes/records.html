@@ -1,0 +1,58 @@
+{% comment %}
+引数一覧
+data-name: 必須
+using:
+no-using:
+
+category: 必須
+items: 必須
+  name: 必須
+  using: 必須(no-usingを指定しない場合)
+  url: オプション
+  tech: オプション
+{% endcomment %}
+
+{% assign records = include.records %}
+{% unless include.no-using %}
+  {% assign no-using = false %}
+{% endunless %}
+
+<div class="records-list">
+{% for category in records.categories %}
+  {% comment %} カテゴリのレコードのusingが全てfalseの場合は、スキップする {% endcomment %}
+  {% assign is_exist = false %}
+  {% if no-using == false %}
+    {% for item in records.items %}
+      {% if category == item.category and include.using == item.using %}
+        {% assign is_exist = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if is_exist == false %}
+      {% continue %}
+    {% endif %}
+  {% endif %}
+
+  <strong class="category-header">{{ category }}</strong>
+  <ul class="custom-list mt10">
+    {% for item in records.items %}
+      {% if category != item.category %}
+        {% continue %}
+      {% endif %}
+      {% if no-using == false and include.using != item.using  %}
+        {% continue %}
+      {% endif %}
+      <li>
+        {% if item.url %}
+          <a class="page-link" href="{{ item.url }}">{{ item.name }}</a>
+        {% else %}
+          {{ item.name }}
+        {% endif %}
+        {% if item.tech %} <span class="tech">{{ item.tech | join: ', ' }}</span> {% endif %}
+        <hr class="mt10">
+        <p class="mt5">{{ item.comment | newline_to_br }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+</div>

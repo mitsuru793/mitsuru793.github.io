@@ -1,0 +1,39 @@
+assets:
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+
+baseurl: ""
+
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+ga_analytics: UA-XXXXXXXX-X
+
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+
+markdown: kramdown
+
+title: Mitsuru793
+email: your-email@domain.com
+description: >
+  自分の使ったものやメモを整理しています。
+url: "http://yourdomain.com"
+twitter_username: mitsuru793
+github_username: mitsuru793
+collections:
+  etcs:
+    output: true

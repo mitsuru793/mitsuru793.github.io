@@ -1,0 +1,247 @@
+categories:
+  - &editor エディタ
+  - &image 画像・動画編集
+  - &sns SNS
+  - &notify 通知
+  - &todo TODO
+  - &bookmark ブックマーク
+  - &player 再生プレーヤー
+  - &office Office
+  - &book 本
+  - &browser ブラウザ
+  - &calendar カレンダー
+  - &launcher ランチャー
+  - &mail メール
+  - &utility ユーティリティ
+items:
+  - name: vim
+    category: *editor
+    using: true
+    comment: hjklキーの移動が手放せません。ソフトも軽く、凄いかゆいところに手が届く拡張性が好きです。
+  - name: Sublime text 3
+    category: *editor
+    using: true
+    comment: コピペをするときや、マウスカーソルでスクロールしたい時などに使います。閲覧に使うことがほとんどです。コーディングには使いません。
+  - name: Eclipse
+    category: *editor
+    using: false
+    comment: 職場で主にJavaのために使っていました。デバッグやリファクタリングの機能など、IDEの凄さを教えてくれたソフトではありますがとにかく重いです。
+  - name: mi
+    category: *editor
+    using: false
+    comment: Macを買った頃に使っていました。他のエディタを知ったのでもう使っていません。
+  - name: Evernote
+    category: *editor
+    using: true
+    comment: 昔は振り返りとかによく使っていましたが、現在は新規メモのためにはつかっていません。以前のメモがここにあるので仕方なく使っている感じです。Macアプリが使いにくいのもありますが、とにかく重いです！
+  - name: Mac標準メモ
+    category: *editor
+    using: true
+    comment: コピペをすぐに貼り付けれるので使っています。Sublimeだといちいちファイル保存する必要があるので面倒です。SublimeとEvernoteの中間のような使い方をしています。
+  - name: Photoshop
+    category: *image
+    using: true
+    comment: 画像加工が好きなので、相棒のソフトになりました。
+  - name: Slack
+    category: *sns
+    using: true
+    comment: チャットツールではこれがベストだと思っています。直感的に使えるのと使っていて楽しいのがおすすめです。会話を弾ませやすいです。ただ、自分の所属チームの人としか使えないのが欠点。チーム外の人と話す場合にも、サーバーを立てる必要があります。
+  - name: Line
+    category: *sns
+    using: true
+    comment: iPhoneだけでなく、PCでも使用しています。Macアプリだけでなく、Chromeアプリも登場しましたのでChrome BookでもLINEができるようになりました。友達が皆使っているので使わざるを得ない感じですかね。アプリとしては使いやすいので好きです。
+  - name: HipChat
+    category: *sns
+    using: false
+    comment: あまり直感的なUIではなく、使い方を調べる必要がありました。すぐにSlackの存在を知り移行しました。
+  - name: Skype
+    category: *sns
+    using: true
+    comment: 通信の安定性はこれが一番だと思います。ですが、余計な音まで拾ってしまうことも（笑）知り合いと1対1で連絡を取るために使っています。画面共有でもできるのがいいです。
+  - name: Mac標準メッセージ
+    category: *sns
+    using: false
+    comment: LINEがまだ無い時、googleチャットを使うのに使っていました。一人としかやりとりしかしなかったので、どんな機能があったのかは全く調べてません。
+  - name: Skitch
+    category: *image
+    using: true
+    comment: Evernoteに買収されてから使いにくくなったので、バージョン1.0.12の古いのを使っています。今はどんなインターフェースになっているのかな。画像に注釈を添えて送るのがすぐに出来るので、チャットで加工画像をさっと送ることができます。手軽さが一番の売りです。
+  - name: Growl
+    category: *notify
+    using: true
+    comment: 全く使いこなせていません。今はMac標準の通知もありますし、入れてるだけになっています。
+  - name: Wunderlist
+    category: *todo
+    using: true
+    comment: シンプルなインターフェースで直感的に使いやすいのこれを愛用しています。高機能があるとtodoに使われてしまい、目的を見失ってしまうのでシンプルがいいですね。
+  - name: Todoist
+    category: *todo
+    using: false
+    comment: Macアプリの起動が遅いので使うのをやめました。タスク名が長文になっても、全文が表示されるのはメモアプリとして使えるなと思いました。一番の特徴は、こなしたタスク数によってポイントやグラフが記録されていきます。モチベーションUPの機能です。
+  - name: Pocket
+    category: *bookmark
+    using: true
+    comment: Chromeアプリでは1クリックで登録できるのが好きです。Macアプリでは、整理にしか使っていません。閲覧には使っていません。MacからiPhoneにリンクを送るために使っています。もちろん「後で読む用」に使っています。ほとんど読んでないですが（笑）
+  - name: QuickTime Player
+    category: *player
+    using: true
+    comment: Macの操作画面を記録するのに使っています。Skitchと同じで手軽に記録できるのがいいですね。PCの操作を聞かれた時に、さっと録画して動画をチャットで送ったりとかできます。
+  - name: iTunes
+    category: *player
+    using: true
+    comment: Windowsの時から使っています。他の音楽管理ソフトは知りませんが、iPhoneを使っているので同期が楽で便利です。音楽プレイヤーとしても使い心地はいいです。シンプルに使えるのがいいですね。
+  - name: Keynote
+    category: *office
+    using: true
+    comment: 簡単な図を書くのにとても便利です。アニメーションを作るのにも重宝しました。最近は必要がないので使っていませんが、プレゼンソフトとして使い続ける予定です。
+  - name: Microsoft Office
+    category: *office
+    using: false
+    comment: Macに変えてから使っていません。必要が無いなら使うつもりはないです。
+  - name: LibraOffice
+    category: *office
+    using: false
+    url: https://ja.libreoffice.org/
+    comment: Linuxでcsvファイルを閲覧するのに使っていました。
+  - name: Kindle
+    category: *book
+    using: true
+    url: http://www.amazon.co.jp/gp/feature.html?docId=3077089416
+    comment: 最初はChromeアプリ版を使っていました。読むのに支障はありませんが、管理機能が最悪です。あと漫画にも付箋ができるようにして欲しいです。他に選択肢がないのでこれを使っています。
+  - name: Chrome
+    category: *browser
+    using: true
+    url: https://www.google.co.jp/chrome/browser/desktop/index.html
+    comment: 拡張機能が豊富なのがいいです。Chromeストアで手軽にインストールして試すことが出来ます。動作が速いので使い始めましたが、最近はかなり重くなってきた感じもあります。ですが、使い続けると思います。
+  - name: Firefox
+    category: *browser
+    using: false
+    url: https://www.mozilla.org/ja/firefox/new/
+    comment: ブラウザに選択肢があるということを教えてくれました。IEから変えた時は軽快な動作に驚きました。
+  - name: Internet Expoloer
+    category: *browser
+    using: false
+    url: http://windows.microsoft.com/ja-jp/internet-explorer/download-ie
+    comment: 初めて使ったブラウザです。無くなって欲しいブラウザでもあります。
+  - name: Mac標準カレンダー
+    category: *calendar
+    using: true
+    url: https://support.apple.com/ja-jp/HT202835
+    comment: googleカレンダーの同期もできますし、そもそも予定を書き込むことがないのでこれで十分です。
+  - name: Alfred
+    category: *launcher
+    using: true
+    url: https://www.alfredapp.com/
+    comment: alt + spaceで検索窓を出して、後はアプリを入力するたびに絞りこまれます。インクリメンタルサーチというやつですね。アプリを起動するときはこれを使っています。もう手放すことの出来ないアプリです。かなりの機能があるみたいですが、使っていないですしわからないです。
+  - name: Thunderbird
+    category: *mail
+    using: true
+    url: https://www.mozilla.jp/thunderbird/
+    comment: メールを閲覧するためだけに使っています。メールを書くのはブラウザのGmailで行っています。メールが見れればいいので、特にこのアプリをおすすめするは理由はないです。最近重くなった気がします。
+  - name: Sylpheed
+    category: *mail
+    using: true
+    url: http://sylpheed.sraoss.jp/ja/
+    comment: 職場で使用を強制されていました。プライベートで利用するならいいかもしれませんが、メール業務をするのには絶対おすすめできないと思いました。これ使うならThunderbirdを使います。
+  - name: SourceTree
+    category: *utility
+    using: false
+    url: https://ja.atlassian.com/software/sourcetree/overview/
+    comment: gitの入門サイトを見ながら使っていました。今はターミナル上でaddしますし、閲覧にはCUIのtigで十分かなと思います。そもそもgitを使いこなせていないので、高機能はいらないです。
+  - name: 夜フクロウ
+    category: *sns
+    using: true
+    url:
+    comment: とても使いやすいtwitterクライアントです。マルチカラムではありませんがつぶやきと会話、タイムラインを見るだけには十分です。
+  - name: Jantter
+    category: *sns
+    using: false
+    url:
+    comment: マルチカラム対応のtwitterクライアントです。複数のリストを一気に閲覧するために使いました。ですが、リストを追いかける必要はないと思い使ってません。あと、スリープ後に再起動しないといけないバグが致命的です。
+  - name: CheatSheet
+    category: *utility
+    using: true
+    url: https://www.cheatsheetapp.com/CheatSheet/
+    comment: commandキーを押し続けると、現在のアクティブなアプリのショーカット一覧が見れます。頻繁に使わなくても入れておくといいアプリです。
+  - name: Dropbox
+    category: *utility
+    using: true
+    url: https://www.dropbox.com/
+    comment: ローカルのファイルとクラウドストレージを自動同期できるのは便利です。特にこれがいいからという理由では使っていません。ストレージ容量でだと、他のサービスのほうがいいかもしれません。
+  - name: Stache
+    category: *bookmark
+    using: false
+    comment: サムネイルでブックマークを一括で閲覧できます。管理もしやすいシンプルなアプリです。よく見に行くサイトとかをまとめようかなと思いましたが、すぐに使わなくなってしまいました。もしかしたらpocketの代わりに使うようにかもしれません。
+  - name: Tree
+    category: *editor
+    using: true
+    comment: ツリー構造でメモを取るブレストツールです。マインドマップ代わりに使っています。D&Dでブランチを整理できるのがいいです。
+  - name: DayOne
+    category: *editor
+    using: false
+    comment: 反省や日記を書いていましたが、見返すことがないので使わなくなってしまいました。使い心地はとてもいいです。
+  - name: iTerm2
+    category: *utility
+    using: true
+    comment: Mac標準ターミナルから乗り換えましたが、特に変わりありません。全然使いこなせていないですが、特に困ってもいません。画像表示の実装が楽しみです。
+  - name: Discord
+    category: *sns
+    using: true
+    comment: ゲームコミュニティ向けのチャットサーバを立てることができます。SlackとSkypeを足した感じです。これのいいところは、通話機能です。ノイズキャンセリングも最高ですし、なにより1つの部屋に入って通話をするので相手にコールする必要がありません。部屋で待ち合わせする感じです。たいへん地味ですが、使ってみると凄い便利だと思います。
+  - name: VLC
+    category: *player
+    using: false
+    url: http://www.videolan.org/index.ja.html
+    comment: Linuxで動画ファイルを確認するのに使っていました。
+  - name: GOM Player
+    category: *player
+    using: false
+    url: http://www.gomplayer.jp/
+    comment: かなり昔、Windowsで動画を閲覧するのに使っていました。
+  - name: iMovie
+    category: *image
+    using: false
+    comment: 簡単なスライドショーを作るのに使いました。多機能ではないですが、初心者でも作りやすいのでおすすめです。
+  - name: MicroSoft Silverlight
+    category: *image
+    using: false
+    comment: dTVというDOCOMOのストリーミングサービスをsafariで閲覧するのに必要だったので入れました。けど、ほとんどiPhoneで見るので使っていません。
+  - name: VideoPad
+    category: *image
+    using: false
+    url: http://www.nchsoftware.com/videopad/jp/index.html
+    comment: 職場で動画の終始をトリミングするために使っていました。
+  - name: Stackroom
+    category: *utility
+    using: true
+    url: http://www.geocities.jp/aromaticssoft/stackroom/index.html
+    comment: 画像を管理するのに便利です。もうアップデートはありませんが、起動出来ないわけじゃないので使っています。とても良く出来たUIです。
+  - name: Mou
+    category: *editor
+    using: false
+    url: http://25.io/mou/
+    comment: 左にmarkdown編集画面、右にレンダリング画面が表示されます。それだけのシンプルなソフトです。開発が止まったとか聞いたので使うのをやめました。
+  - name: MacDown
+    category: *editor
+    using: false
+    url: http://macdown.uranusjr.com/
+    comment: MarkdownエディタのMouの後継と思っています。markdownをHTMLに変換するだけに使ってた時もありました。
+  - name: Virtual Box
+    category: *utility
+    using: false
+    comment: ファイラー付きのMarkdownエディタです。Markdown編集画面とレンダリング画面が一緒に表示されません。Markdownエディタの中ではこれが一番良かったです。ですが、vimの方が便利なので移行しました。
+  - name: BetterTouchTool
+    category: *utility
+    using: true
+    url: http://bettertouchtool.softonic.jp/mac
+    comment: Windows7みたいに、ウィンドウを端に寄せると吸い付くようにリサイズする機能があります。これだけしか使っていません。マウスジェスチャーを色々設定できるソフトだった気がします。
+  - name: karabiner
+    category: *utility
+    using: true
+    url: https://pqrs.org/osx/karabiner/index.html.ja
+    comment: vimでインサートからノーマルモードに戻る時に、自動でキーボード入力を半角英数にするために使っています。キーバインドを設定するできるので、他にも使い道はあるかと。
+  - name: Google日本語入力
+    category: *utility
+    using: true
+    url: https://www.google.co.jp/ime/
+    comment: 歴史上の人物名など、マイナーな変換をしてくれるので助かります。辞書ツールは変換候補がどれくらい充実しているかが重要だと思います。

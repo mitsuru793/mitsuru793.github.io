@@ -1,0 +1,82 @@
+categories:
+  - &record 記録
+  - &code コード
+  - &utility ユーティリティ
+  - &dictionary 辞書
+  - &web Web
+items:
+  - name: Toggl
+    category: *record
+    using: false
+    url: https://toggl.com/
+    comment: 自分の作業ログを取るサイトです。最近の履歴から記録開始するのがやりやすいです。ですが、いつの間にか記録すること自体やめていました（笑）ログを取るにはこれが一番おすすめです。
+  - name: 読書メーター
+    category: *record
+    using: false
+    url: http://bookmeter.com/
+    comment: 読書記録をつけることができます。特徴はSNSとしての機能が他より充実していることです。記録することも途中でやめました。本もあまり読みませんし、記録するために数をこなしているような気もしたので。
+  - name: feedly
+    category: *utility
+    using: true
+    url: https://feedly.com/
+    comment: RSSフィードを購読できます。各サイトにアクセスして更新情報を確認しなくても、複数サイトの新着タイトルを一括で確認できます。Google Readerがサービス終了したので乗り換えました。移行のしやすさが良かったです。
+  - name: Weblio辞書
+    category: *dictionary
+    using: true
+    url: http://ejje.weblio.jp/
+    comment: 英単語を調べるのに使っています。調べた単語を単語帳に登録できるのが便利です。Chromeエクステンションを使えば、ほかのサイトからでも右クリックすればポップアップで辞書を引き、単語帳に登録することが出来ます。
+  - name: COBUILD Advanced British English Learner's Dictionary
+    category: *dictionary
+    using: true
+    url: http://www.collinsdictionary.com/dictionary/english-cobuild-learners
+    comment: ここの初学者用の英英辞書がとてもおすすめです。全部が完全な文で記述されているので、英語を読んで慣れるのにおすすめです。音声も聞くことが出来ます。ただ、単語帳に登録することができないのが痛いです。
+  - name: ムームードメイン
+    category: *web
+    using: true
+    url: https://muumuu-domain.com/
+    comment: ドメインを購入するのに使っています。管理画面はいたって普通です。そもそもそんなにドメインを管理していないので、困ることがまだないです。
+  - name: Google アナリティクス公式サイト
+    category: *web
+    using: true
+    url: https://www.google.com/analytics/
+    comment: 自分のサイトにスクリプトを仕込むことで、どれくらいのアクセス数があるかを確認できるようになります。アクセス元のOSや場所など、事細かく調査することが出来ます。ですが、私は自己満足のためにアクセス数をたまに見ているだけです。
+  - name: Google ウェブマスター
+    category: *web
+    using: true
+    url: https://www.google.com/webmasters/#?modal_active=none
+    comment: 自分のアップした新着ページを、より早くGoogle検索に引っかかるようにするため使っています。効果はある気がします。全然使いこなせていませんが。
+  - name: さくらインターネット
+    category: *web
+    using: true
+    url: http://www.sakura.ad.jp/
+    comment: Wordpressを公開するためにレンタルサーバや、webサービスを公開するためにVPSサーバを借りています。特に他のサービスと比較して使っているわけではありません。ただ借りているだけなので、困ることもありません。
+  - name: GistBox
+    category: *code
+    using: true
+    url: https://app.gistboxapp.com/
+    comment: gistにタグをつけて整理したりすることができます。整理機能は本家につけて欲しいですが、gistの使用用途は整理する必要なくぶち込めるところということですかね。
+  - name: jsdo.it
+    category: *code
+    using: false
+    url: http://jsdo.it/
+    comment: javascript, html, cssをブラウザ上で書いて試すことが出来ます。ほとんど使っていません。
+  - name: CodePen
+    category: *code
+    using: false
+    url: http://codepen.io/
+    comment: javascript, html, cssをブラウザ上で書いて試すことが出来ます。他と比べて、こちらはデザイン系の作品が多く、クオリティが高いものが多いです。色々見て回るだけでも面白いです。
+  - name: paiza.IO
+    category: *code
+    using: true
+    url: https://paiza.io/?locale=ja-jp
+    comment: Java, Ruby, Pythonなど24言語をブラウザ上で書いて実行することが出来ます。手軽に環境を揃えることもできますし、大変便利です。gistのコードを実行することができるのも地味にいいですね。
+  - name: Bitbucket
+    category: *web
+    using: true
+    url: https://bitbucket.org/
+    comment: gitのホスティングサービスです。かなり使いづらい印象です。複数で使うなら、Githubの方が熱が入りやすく盛り上がりやすいと思いました。こっちは使うのに余計な力が必要な気がします。
+  - name: GitLab
+    category: *web
+    using: false
+    url: https://about.gitlab.com/
+    comment: 一度触れただけでどんなサイトかは全然知りません。知り合いによると、最近UIがリニューアルされたみたいでかなり良くなったそうです。プライベートリポジトリを持つなら、これを自前のサーバに置いて運用するのが良さそうです。

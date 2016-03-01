@@ -1,0 +1,15 @@
+{% assign collection = include.collection %}
+
+<div class="flexbox">
+    {% for p in collection %}
+        <a class="item" href="{{ site.baseurl }}{{ p.url }}">
+          <section>
+            <h1>
+              {{ p.title }}
+              {% img "collection{{ p.id }}.png" %}
+            </h1>
+            <p>{{ p.excerpt }}</p>
+          </section>
+        </a>
+    {% endfor %}
+</div>
