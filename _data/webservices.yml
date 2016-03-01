@@ -74,7 +74,7 @@ items:
     category: *web
     using: true
     url: https://bitbucket.org/
-    comment: gitのホスティングサービスです。かなり使いづらい印象です。複数で使うなら、Githubの方が熱が入りやすく盛り上がりやすいと思いました。こっちは使うのに余計な力が必要な気がします。
+    comment: gitのホスティングサービスです。かなり使いづらい印象です。複数で使うなら、Githubの方が熱が入りやすく盛り上がりやすいと思いました。こっちは使うのに余計な力が必要な気がします。ですが、プライベートリポジトリが無制限に持てるのが凄いので使っています。
   - name: GitLab
     category: *web
     using: false
