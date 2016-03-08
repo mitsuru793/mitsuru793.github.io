@@ -88,3 +88,8 @@ items:
     tech: [Photoshop, illustrator]
     url: http://www.pixiv.net/member_illust.php?id=16562000
     comment: 架空の広告や映画のポスターなどを作っています。[作品はPixivで公開しています。]( http://www.pixiv.net/member_illust.php?id=16562000 )
+  - name: Pixivの自分の作品情報をYAMLで保存
+    category: *web
+    tech: [Ruby, Mechanize]
+    url: https://gist.github.com/mitsuru793/544799043ca3d3760e97
+    comment: Pixivの作品管理ページをスクレピングし、各作品のタイトルやキャプション、評価回数などの情報を一括で取得します。データはYAMLで保存されます。
