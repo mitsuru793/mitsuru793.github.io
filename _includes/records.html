@@ -50,7 +50,7 @@ items: 必須
         {% endif %}
         {% if item.tech %} <span class="tech">{{ item.tech | join: ', ' }}</span> {% endif %}
         <hr class="mt10">
-        <p class="mt5">{{ item.comment | newline_to_br }}</p>
+        <p class="mt5">{{ item.comment | newline_to_br | markdownify }}</p>
       </li>
     {% endfor %}
   </ul>
