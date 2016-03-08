@@ -2,6 +2,8 @@ categories:
   - &built-in 組み込み
   - &web web
   - &library library
+  - &post community
+  - &art art
 items:
   - name: LEDサイコロ
     category: *built-in
@@ -22,14 +24,16 @@ items:
   - name: ゲームのキャラクター性能比較サイト
     category: *web
     tech: [Rails, Vue.js]
+    url: http://vainglory-ranking.program-blog.net/
     comment: 対戦ゲームのキャラクターの性能を調べて記録して、ランキングで比較することができます。各キャラクターを基準に、相対表示をすることも可能です。
   - name: 簡易ORM
     category: *library
     tech: [Python]
-    comment: メタクラスを使用。1つのクラスに、1つのテーブルのフィールド名をプロパティとして定義するだけで、自動でメソッドを構築してくれます。比較演算子の動作を変えたりしました。
+    comment: メタクラスを使用。1つのクラスに、1つのテーブルのフィールド名をプロパティとして定義するだけで、自動でメソッドを構築してくれます。比較演算子の動作を変えたりしました。[where句の組み立てを記事で解説しています。](http://qiita.com/mitsuru793/items/aa45f837dbe09b0874e5)
   - name: 学習サイトのスクレイピング
     category: *web
     tech: [Rails, Sidekiq]
+    url: http://dot-explorer.program-blog.net/
     comment: ドットインストールという学習サイトをスクレイピングして、各レッスンの内容を1ページで俯瞰できるようにしました。
   - name: タイマー
     category: smartphone
@@ -46,14 +50,41 @@ items:
   - name: 数字の桁を揃える
     category: *library
     tech: [JavaScript]
+    url: https://github.com/mitsuru793/digit-js
     comment: 好きな文字でバインディングして、桁を揃えることが出来ます。整数と小数、別々に詰め物を設定することができます。
   - name: キャラクターのステータスを扱う
     category: *library
     tech: [JavaScript]
+    url: https://github.com/mitsuru793/object-model-js
     comment: キャラクターのステータスをモデルとして扱えるクラスです。ステータスの初期値、レベルアップ時の増加値を指定すれば、自動で現在のレベルのステータス値を取得するプロパティを定義してくれます。
   - name: 夏に関するツイートを自動収集
     category: *web
     tech: [Rails, sidekiq]
     comment: 夏に関するツイートをDBに記録します。
-  - name: アニメーション、画像
-    comment: POV-Ray, Photoshop, After Effectsを使いました。趣味でアイコン用の画像や、アニメーションを作成しています。
+  - name: 自分の情報のまとめサイト
+    category: *post
+    tech: [Jekyll]
+    comment: このサイトです。自分の経験をまとめていく予定です。色々な情報を一覧で確認できるようにしています。
+  - name: ２０歳からのプログラミング
+    category: *post
+    tech: [WordPress]
+    url: http://program-blog.net/
+    comment: プログラム以外で調べたことなどをまとめています。プログラムの記事はQiitaに移行しました。
+  - name: Qiita
+    category: *post
+    url: http://qiita.com/mitsuru793
+    comment: プログラムでのエラーなどをまとめています。
+  - name: 画像編集のコミュニティ
+    category: *post
+    url: https://plus.google.com/u/0/communities/111087201794629594984
+    comment: 「加工屋」というGoogle+コミュニティを運営しています。主に学びたいテーマのPhotoshopチュートリアルを取り組んでいます。チュートリアルが終わったら、その技術を使って派生作品を作ります。また、画面共有でペアプロのような作業をしたりもします。週1で出しているイベントに画像を投稿していくのですが、Google+の仕様上、限定公開になっているため外部の人は閲覧することができません。
+  - name: アニメーション
+    category: *art
+    tech: [Javax-Swing, POV-Ray, After Effects, Three.js]
+    url: https://github.com/mitsuru793/Animation
+    comment: 簡単なアニメーショを作っています。[動画はYoutubeで公開しています。](https://www.youtube.com/channel/UCXDYxuhhDxO3LC8SPl2eN5w)
+  - name: 画像編集
+    category: *art
+    tech: [Photoshop, illustrator]
+    url: http://www.pixiv.net/member_illust.php?id=16562000
+    comment: 架空の広告や映画のポスターなどを作っています。[作品はPixivで公開しています。]( http://www.pixiv.net/member_illust.php?id=16562000 )
