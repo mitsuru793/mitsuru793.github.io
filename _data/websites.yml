@@ -10,7 +10,7 @@ items:
   - name: 価格.com
     url: http://kakaku.com/
     category: *shop
-    comment: カテゴリ別に売れている商品のランキングが見れます。レビューがamazonに比べて詳しいものが多い気がします。コスパがいいものを探すのを簡単に探すのに使っています。
+    comment: カテゴリ別に売れている商品のランキングが見れます。レビューがamazonに比べて詳しいものが多い気がします。コスパがいいものを探すのに使っています。
   - name: 楽天市場
     url: http://www.rakuten.co.jp/?l2-id=ranking_a_top_head_cmn01
     category: *shop
