@@ -98,3 +98,8 @@ items:
     tech: [Vimscript]
     url: https://github.com/glidenote/memolist.vim
     comment: memolist.vimというメモ機能のプラグインへの機能追加を行いました。現在編集中のメモのYaml Front Matterを読み込み、タグとカテゴリを引き継いで新規メモを作れるようにしました。
+  - name: WebStorageにCSVデータを保存
+    category: *library
+    tech: [JavaScript]
+    url: https://github.com/mitsuru793/csv-webstorage
+    comment: 大体のAPIは作成しましたが、必要がなくなったので開発は終了しました。
