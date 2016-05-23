@@ -39,6 +39,10 @@ items:
     url: https://pixabay.com/
     category: *material
     comment: 凄いクオリティのフリー写真を探すことが出来ます。ベクター系や動画もあるみたいです。サイトの機能で、画像をお気に入りに登録したり、投稿者をフォローしたりできるのが他の素材サイトと違うところです。お気に入りはとても便利な機能なのでぜひおすすめです。ブログ記事のサムネイルではなく、画像加工のために使えるものが多いです。
+  - name: Unsplash
+    url: https://unsplash.com/
+    category: *material
+    comment: Pixabayよりもオシャレでクオリティの高い画像が多い気がします。DLボタンをクリックするとDLされるわけではなく、画像だけ表示されるのが不便です。
   - name: ぱくたそ
     url: https://www.pakutaso.com/
     category: *material
