@@ -226,8 +226,8 @@ items:
     using: false
     url: http://macdown.uranusjr.com/
     comment: MarkdownエディタのMouの後継と思っています。markdownをHTMLに変換するだけに使ってた時もありました。
-  - name: Virtual Box
-    category: *utility
+  - name: Versatile Markdown
+    category: *editor
     using: false
     comment: ファイラー付きのMarkdownエディタです。Markdown編集画面とレンダリング画面が一緒に表示されません。Markdownエディタの中ではこれが一番良かったです。ですが、vimの方が便利なので移行しました。
   - name: BetterTouchTool
