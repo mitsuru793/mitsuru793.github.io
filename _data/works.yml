@@ -103,3 +103,23 @@ items:
     tech: [JavaScript]
     url: https://github.com/mitsuru793/csv-webstorage
     comment: 大体のAPIは作成しましたが、必要がなくなったので開発は終了しました。
+  - name: コードのメモ
+    category: *community
+    tech: [Jekyll]
+    url: http://mitsuru793.github.io/code-memo/
+    comment: 自分で打ち込んで確認したサンプルなどやメモを置いています。完全に自分用のメモです。ここから外部向けに使えそうなのはQiitaにも投稿するようにしました。簡単なメモでも他の人が見れるようにしておけば、どんなことをやっているか分かって便利かなと思いました。
+  - name: スキーマバリデーター
+    category: *library
+    tech: [Ruby]
+    url: https://github.com/mitsuru793/schema_validator
+    comment: Arrayの各要素の型や、Hashのkey名とvalueの型などの構造を検証することができます。スキーマはArray、Hashで定義することができるので、スキーマファイルをYAMLなどの別ファイルで管理することが可能です。
+  - name: YAML Front Matterをgrep
+    category: *library
+    tech: [Ruby]
+    url: https://github.com/mitsuru793/dig_yaml_front_matter
+    comment: YAML Front Matterをフィルターにして、ファイル検索が行えコマンドです。Markdownでファイルを管理している人は、tagやcategoryをつければターミナル上でブログのように扱うことが出来ます。Jekyllとmemolist.vimと合わせて使うために作りました。色々な機能があります。
+  - name: Pixivの閲覧補助するChrome Extension
+    category: *web
+    tech: [JavaScript, Chrome]
+    url: https://chrome.google.com/webstore/detail/adcipcbdiheoomhpkaofhkjadnfajgac/publish-accepted?hl=ja
+    comment: Pixivの使いづらいところを補助するために作りました。フォロー、ブックマーク完了ページから自動で戻る。作品選択がチェックボックスだけでなく、サムネイルをクリックしても可能になったりします。
