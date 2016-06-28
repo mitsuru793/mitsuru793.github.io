@@ -123,3 +123,12 @@ items:
     tech: [JavaScript, Chrome]
     url: https://chrome.google.com/webstore/detail/adcipcbdiheoomhpkaofhkjadnfajgac/publish-accepted?hl=ja
     comment: Pixivの使いづらいところを補助するために作りました。フォロー、ブックマーク完了ページから自動で戻る。作品選択がチェックボックスだけでなく、サムネイルをクリックしても可能になったりします。
+  - name: 英語読書会
+    category: *post
+    tech: [Github]
+    url: https://github.com/mitsuru793/study_english
+    comment: 週1でITに関する英語を読んでいく予定です。今はzshのmanを読み進めています。読んだ感想やメモを各自markdownで提出します。
+  - name: 学習者の雑談場
+    category: *post
+    tech: [Slack]
+    comment: 私がネット上で知り合った人達と話すためのチャットコミュニティを用意してあります。主に何かを学習している人を招いていきます。今はITに関することを学習・仕事にしている人ばかりですが、他の分野の人も入るかもしれません。外国人の方もいらっしゃいます。
