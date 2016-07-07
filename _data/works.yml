@@ -65,11 +65,11 @@ items:
     category: *post
     tech: [Jekyll]
     comment: このサイトです。自分の経験をまとめていく予定です。色々な情報を一覧で確認できるようにしています。
-  - name: ２０歳からのプログラミング
+  - name: 20歳からのプログラミング
     category: *post
     tech: [WordPress]
     url: http://program-blog.net/
-    comment: プログラム以外で調べたことなどをまとめています。プログラムの記事はQiitaに移行しました。
+    comment: プログラム以外で調べたことなどをまとめています。プログラムの記事はQiitaに移行しました。追記：このブログは削除しましたが、画像なしの記事は[はてなブログ](http://mitsuru793.hatenablog.com/)の方で見ることが出来ます。一時的なバックアップですので、削除する予定です。
   - name: Qiita
     category: *post
     url: http://qiita.com/mitsuru793
