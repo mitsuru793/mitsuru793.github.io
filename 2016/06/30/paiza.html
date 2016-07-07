@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paizaのアイディア</title>
+  <meta name="description" content="Paizaを使ってみて気がついたことをまとめました。ここに書いてある意見は、運営へ報告済みです。他の方が同じ問い合わせをしてしまわないためにも、ここに残しておきます。ちなみに、Paiza運営事務局からは、問い合わせ後にしっかりとした返信を頂きました。現在、色々と準備中とのことです。全てを無理して受けれずにPaiz...">
+
+  <link type="text/css" rel="stylesheet" href="/assets/application.css">
+  <link rel="canonical" href="http://mitsuru793.github.io/2016/06/30/paiza.html">
+  <link rel="alternate" type="application/rss+xml" title="Mitsuru793" href="http://mitsuru793.github.io/feed.xml">
+</head>
+
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+    <![endif]-->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Mitsuru793</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Paizaのアイディア</h1>
+    <p class="post-meta"><time datetime="2016-06-30T21:24:06+09:00" itemprop="datePublished">Jun 30, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div id="toc-container">
+  <table class="toc" id="toc">
+    <tbody>
+      <tr>
+        <td>
+          <div id="toctitle">
+            <h2>Contents</h2>
+          </div>
+          <ul>
+            <li class="toc_level-1 toc_section-1">
+              <a href="#tocAnchor-1-1"><span class="tocnumber">1</span> <span class="toctext">スキルチェックコーディング</span></a>
+              <ul>
+                <li class="toc_level-2 toc_section-2">
+                  <a href="#tocAnchor-1-1-1"><span class="tocnumber">1.1</span> <span class="toctext">答えを見せるなど、次の学習へ繋げる</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-3">
+                  <a href="#tocAnchor-1-1-2"><span class="tocnumber">1.2</span> <span class="toctext">ユーザーに問題を作成してもらう</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-4">
+                  <a href="#tocAnchor-1-1-3"><span class="tocnumber">1.3</span> <span class="toctext">ランキングの仕組みの詳細を記述する</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-5">
+                  <a href="#tocAnchor-1-1-4"><span class="tocnumber">1.4</span> <span class="toctext">バグを見つけて修正する問題</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-6">
+                  <a href="#tocAnchor-1-1-5"><span class="tocnumber">1.5</span> <span class="toctext">ライブラリを指定した問題</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="toc_level-1 toc_section-7">
+              <a href="#tocAnchor-1-7"><span class="tocnumber">2</span> <span class="toctext">プロフィール</span></a>
+              <ul>
+                <li class="toc_level-2 toc_section-8">
+                  <a href="#tocAnchor-1-7-1"><span class="tocnumber">2.1</span> <span class="toctext">プロフィール入力率が100%にならない件</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-9">
+                  <a href="#tocAnchor-1-7-2"><span class="tocnumber">2.2</span> <span class="toctext">希望条件の開発言語にHaskellがない</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-10">
+                  <a href="#tocAnchor-1-7-3"><span class="tocnumber">2.3</span> <span class="toctext">語学のレベル</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="toc_level-1 toc_section-11">
+              <a href="#tocAnchor-1-11"><span class="tocnumber">3</span> <span class="toctext">求人詳細画面</span></a>
+              <ul>
+                <li class="toc_level-2 toc_section-12">
+                  <a href="#tocAnchor-1-11-1"><span class="tocnumber">3.1</span> <span class="toctext">企業の公式サイトへのリンクがない</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-13">
+                  <a href="#tocAnchor-1-11-2"><span class="tocnumber">3.2</span> <span class="toctext">鍵マークの意味</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-14">
+                  <a href="#tocAnchor-1-11-3"><span class="tocnumber">3.3</span> <span class="toctext">Skype面接に必要な履歴書は使いまわされるのか？</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="toc_level-1 toc_section-15">
+              <a href="#tocAnchor-1-15"><span class="tocnumber">4</span> <span class="toctext">paiza.io</span></a>
+              <ul>
+                <li class="toc_level-2 toc_section-16">
+                  <a href="#tocAnchor-1-15-1"><span class="tocnumber">4.1</span> <span class="toctext">ヘッダーのTweetボタン</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div><p><a href="https://paiza.jp/mypage/job-info?lan=firstview">Paiza</a>を使ってみて気がついたことをまとめました。ここに書いてある意見は、運営へ報告済みです。他の方が同じ問い合わせをしてしまわないためにも、ここに残しておきます。ちなみに、Paiza運営事務局からは、問い合わせ後にしっかりとした返信を頂きました。現在、色々と準備中とのことです。全てを無理して受けれずにPaizaの良さを残しつつ、発展していくと良いですね。</p>
+
+<p>ここでの意見は、私が既存の機能を見落としている場合があります。また、既に反映がされている場合もあります。</p>
+
+<h1 id="tocAnchor-1-1">スキルチェックコーディング</h1>
+
+<h2 id="tocAnchor-1-1-1">答えを見せるなど、次の学習へ繋げる</h2>
+
+<p>問題は面白く、やりごたえがあるのですが、回答を見ることが出来ないのが残念です。より精確な実力を知るために回答の公開を控えていると思いますが、回答後には見れるようにして頂けると大変助かります。</p>
+
+<blockquote>
+  <p>“得意”が伸びる、社会を創る。</p>
+</blockquote>
+
+<blockquote>
+  <p>“日本のIT/Webエンジニアを、世界レベルに引き上げる”</p>
+</blockquote>
+
+<p>上記は<a href="http://www.gi-no.jp/company/mission/">Paizaの運営元であるギノ株式会社</a>の経営理念です。とても良い言葉だと思います。私も自分の学びの過程を記録に残し、他の人達に「この人に出来るなら自分にでも出来そうだ」と思わせて、チャレンジしてもらう人を増やしたいと思っているため、この考えに共感しました。</p>
+
+<p>問題の答えや必要な知識の用語など、次の学習へ繋げる内容を公開することは、上記の目的をさらに確実にするものだと思います。実際に考えて取り組んだ問題だからこそ、身につく力や得るものも多いので、それに関連付けて新しい知識を身につけられたら学習が捗るなと思います。解答時には出来なくても、後から出来るようになるなら、できる人が増えるということで人材も増えるのではないでしょうか。気軽にこれらの問題に取り組み、それをきっかけにプログラミングを身に着けていく人が増えればいいなと思いました。</p>
+
+<p>ですが、答えを公開することによって、正確な実力が測れないという問題があると思います。そこで2つの提案を描いておきます。</p>
+
+<h3 id="section-2">1. 問題の公開と答えの公開の時期をずらす</h3>
+
+<p>新しい問題を追加する時に、古い問題の答えを公開するのはいかがでしょうか？それか一部の問題だけ公開するのも良いと思います。</p>
+
+<h3 id="section-3">2. より正確に実力を測りたい人に、非公開の問題を提供する</h3>
+
+<p>企業からスカウトしたい人などに対して、一般公開の問題とは別に、非公開の問題を用意するのどうでしょうか？一般公開の問題でユーザーをフィルタリングして、さらに興味のある人にだけ特別な問題を用意するのも良いと思います。この非公開の問題は、段階的に用意しても良いかと。</p>
+
+<h2 id="tocAnchor-1-1-2">ユーザーに問題を作成してもらう</h2>
+
+<p>問いたいテーマをpaizaから提供して、それを問う問題をユーザーが作るのも良いかと思いました。作られた問題を見ることで、プログラミング以外の能力も知ることができると思います。1つだけでなく、複数の答えがある解答をユーザーが出来るととても面白いと思います。デザインの問題など、プログラミング以外のITの分野もあるとより良いかと。</p>
+
+<p>求人案件の中にはメディア事業もあるので、プログラミング技術だけでなく、コンテンツについて考えられるかを見てみたいところもあると思います。</p>
+
+<h2 id="tocAnchor-1-1-3">ランキングの仕組みの詳細を記述する</h2>
+
+<p>スキルチェックコーディングの提出画面には、</p>
+
+<blockquote>
+  <p>このランキングは最大50名を抽出して判定しています。</p>
+</blockquote>
+
+<p>と記載がありますが、これは最新の解答者から50名なのでしょうか？なぜ50名なのかもわかりません。何故か1位なども見ることが出来ず、自分の前後のスコアしかわからない状況です。他にどこかで見るところがあるのでしょうか？そこへの参考リンクが順位表のところにあると助かります。</p>
+
+<p>この件については知り合いと話していたのですが、実際はランキングというの嘘のものではないか？と思えてしまいます。せっかくの良い機能だと思うのに、そこだけが残念です。ランキングは詳細に見れるほどモチベーションに良い影響を与えると思います。</p>
+
+<p>ランキングについてはpaizaから回答を頂きました。総計から50件ではなく、直近の回答者から50件を取得しているようです。(2016/6/29)</p>
+
+<h2 id="tocAnchor-1-1-4">バグを見つけて修正する問題</h2>
+
+<p>一からコードを書くのではなく、既存のコードのバグを見つける問題も面白いと思いました。一箇所の変更でバグのバリエーションを増やせるので、解答が漏れてしまう対策にも繋げやすいかと思います。</p>
+
+<h2 id="tocAnchor-1-1-5">ライブラリを指定した問題</h2>
+
+<p>JavaScriptならjQueryやUnderScore、RubyならActiveRecordなど、使用するライブラリを指定した問題があると問題の幅が広がると思いました。</p>
+
+<h1 id="tocAnchor-1-7">プロフィール</h1>
+
+<h2 id="tocAnchor-1-7-1">プロフィール入力率が100%にならない件</h2>
+
+<p>マネジメント経験、希望勤務地は選択しない場合はデフォルト値が表示されています。そのデフォルト値がリストにないため、選択することは出来ません。</p>
+
+<p>
+  <strong>デフォルト値</strong>
+</p>
+
+<ul>
+  <li>マネジメント経験：経験なし</li>
+  <li>希望勤務地：指定なし（勤務地問わず）</li>
+</ul>
+
+<p>100%の人のみを抽出するフィルターを使っているならば、ここだけはカウントしなくてもいいのではと思いました。（特に希望勤務地）</p>
+
+<p>また、希望勤務地は、希望しない勤務地を入れれることができても良い気がしました。例えば熊本や福島以外を希望する人もいると思いますので、そのような場合に2県以外が全て表示されると見づらいと思います。ですが、見る側が常にフィルターが使えているのなら問題はないかと思います。</p>
+
+<h2 id="tocAnchor-1-7-2">希望条件の開発言語にHaskellがない</h2>
+
+<p>スキルチェックにはHaskell(Beta)がありましたが、表題の部分にはありませんでした。また、AltJSではCoffeeScriptはあるのにTypeScriptはありませんでした。</p>
+
+<h2 id="tocAnchor-1-7-3">語学のレベル</h2>
+
+<p>おそらく、表示の順番的に「ドキュメントが読める」より「日常会話ができる」の方がレベルが上のつもりで表示されているかと思います。ですが、日常会話とドキュメントだとレベルが比較しにくい気もしました。セレクトボックスよりチェックボックスがいいかもしれません。もし、英語力も検討している企業なら、下記の項目が用意されているとさらに分かりやすい気もしました。余計な手間を省ける可能性があります。</p>
+
+<ol>
+  <li>ドキュメントが読める</li>
+  <li>検索エンジンから英語のサイトを検索する。</li>
+  <li>StackOverflow（英語版）を活用することがある。</li>
+  <li>日常会話できる（チャット・メールベース）</li>
+  <li>日常会話できる（通話などでのリアルタイム）</li>
+  <li>ビジネス会話レベル（チェット・メールベース）</li>
+  <li>ビジネス会話レベル（通話などでのリアルタイム）</li>
+  <li>ネイティブレベル</li>
+</ol>
+
+<h1 id="tocAnchor-1-11">求人詳細画面</h1>
+
+<h2 id="tocAnchor-1-11-1">企業の公式サイトへのリンクがない</h2>
+<p>例 : <a href="http://paiza.jp/job_offers/1190?lan=job-info_first">http://paiza.jp/job_offers/1190?lan=job-info_first</a><br />
+企業への公式サイトへのリンクが見当たりませんでした。欄やボタンがあると良いのではないかと思いました。</p>
+
+<h2 id="tocAnchor-1-11-2">鍵マークの意味</h2>
+
+<p>下記画像にある求人詳細画面の鍵マークの意味がわかりませんでした。説明を指定の箇所に書いておくと良いと思いました。</p>
+
+<p>
+  <img src="/img/2016-07-02_paiza-key-icon.jpg" alt="鍵マークの説明" />
+</p>
+
+<p>Paizaから回答を頂きました。これはランクを満たしている人のみが閲覧できる情報のようです。満たしていない人には、「現在のランクでは閲覧ができません。 ランク●以上 で閲覧可能です。」と表示されるとのこと。(2016/07/04)</p>
+
+<h2 id="tocAnchor-1-11-3">Skype面接に必要な履歴書は使いまわされるのか？</h2>
+
+<p>PaizaにはSkype面談を希望の際は、履歴書と職務経歴書をPaiza運営事務局に送るようにと記載されています。この書類はPaizaが今後、自分が応募していく複数の企業の間で使い回されていくのかがわかりませんでした。カジュアル面談、通常面接の場合どちらでも下記の注意書きは出ます。カジュアル面談でSkype面談だと、どのように受け取られるかが気になりました。また、複数で使い回す場合は、志望動機をどうすればいいか分かりませんでした。</p>
+
+<p>
+  <img src="/img/2016-07-04_paiza-casual-skype.jpg" alt="Skype面接の場合の注意書き" />
+</p>
+
+<h1 id="tocAnchor-1-15">paiza.io</h1>
+<p>
+  <a href="https://paiza.io/">https://paiza.io/</a>
+</p>
+
+<h2 id="tocAnchor-1-15-1">ヘッダーのTweetボタン</h2>
+
+<p>画面下部のヘッダー（灰色）に「Tweet」というボタンが2つありました。</p>
+
+<p><strong>イメージ図</strong><br />
+[Follow @paizaIO_jp]  [Follow @paizaIO]  [Tweet]  [Tweet]</p>
+
+<p>違いはつぶやきの内容が、日本語か英語になるかの違いでした。ボタンの見た目からはわからないので、1つだけでいいと思います。</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Mitsuru793</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Mitsuru793</li>
+          <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/mitsuru793"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">mitsuru793</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/mitsuru793"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">mitsuru793</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>自分の使ったものやメモを整理しています。
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script type="text/javascript" src="/assets/vendor.js"></script>
+    <script type="text/javascript" src="/assets/application.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-10240891-28', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+
+</html>

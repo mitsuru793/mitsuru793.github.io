@@ -1,30 +1,777 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Mitsuru793</title>
+    <description>自分の使ったものやメモを整理しています。
+</description>
+    <link>http://mitsuru793.github.io/</link>
+    <atom:link href="http://mitsuru793.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 Jul 2016 16:58:00 +0900</pubDate>
+    <lastBuildDate>Thu, 07 Jul 2016 16:58:00 +0900</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>ママリのアイディア</title>
+        <description>&lt;p&gt;ママリ、ママリQについて気になったことをまとめてみました。この記事のURLは、問い合わせにて報告済みです。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;ママリ&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;未ログイン時は「ママリとは？」を上に設置&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/&quot;&gt;ママリ｜家族の毎日を笑顔にする情報サイト&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;現在は画面の一番下に「mamari [ママリ]とは？」とありますが、初回ユーザーや未ログイン時は、すぐ目につく所に配置するのもいいのではと思いました。でも、1回しか見ないならそのコストはもったいない気もします。判定の処理が増えますしね。そもそも記事タイトル一覧を見れば、何となく分かるかな。メディア記事以外のコンテンツが出来た場合は、考えてみるのもいいかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;記事一覧に投稿日がない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/facilities/387&quot;&gt;「小児科」の新着記事 47記事 [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;私はフロー型の情報の場合は記事投稿日が気になります。特に記事を量産しているところは、長く使える記事が置いてあることが少ないので。メディアサイトなら、なおさら欲しいです。&lt;/p&gt;
+
+&lt;p&gt;投稿日はわかりませんが、記事更新日は個別記事ページにて確認することはできました。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;アカウントを取る意味&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/mypage&quot;&gt;[ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;アカウントを取得しても何もできません。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ママリの記事がお気に入りできる機能を近日公開予定です!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;とマイページに記載がありますが、今は何も機能がないということでしょうか？それならその趣旨を書いておくといいと思います。ないものを探させられると、一気に使う気が失せます。今回の場合だと、メールアドレスの収集のためだけにアカウントを登録させるのかなと思えました。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;マイページにタイトル名がない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/mypage&quot;&gt;[ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;マイページに「マイページ」というタイトル名がありませんでした。なくても困りませんが、気づいたのでメモしておきます。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;広告出稿についてのお問い合わせに、どこに広告が貼られるのか書かれていない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/ad/submit&quot;&gt;広告出稿についてのお問い合わせ [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;「ご予算の全体イメージ」という項目はありますが、どこに広告が貼られるのかがわからないと決めづらいと思いました。掲載位置ごとに定額を決めているのではなく、クライアントごとに値段が変わるから非公開にしているかもしれません。しかし、掲載位置ごとの値段はまだいいかもしれませんが、掲載位置はキャプチャで掲示しておいた方がいいと思いました。その方が頼みやすいです。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;「プレスリリースはこちら」で、説明なしにいきなりメーラーが起動する&lt;/h2&gt;
+
+&lt;p&gt;リンクはママリのフッターにあります。&lt;/p&gt;
+
+&lt;p&gt;広告出稿だと予算イメージは聞かれるのに、プレスリリースだと何も聞かれません。専用のページがあるわけでもなく、クリックするとメーラーが起動します。ママリがプレスリリースを無料でやってくれるのか、それとも他社がママリ自体をプレスリリースしてあげるよという誘いなのかわかりません。やはり、ママリにとってのプレスリリースとは何かを説明しておくと良いと思います。その方が頼みやすいです。&lt;/p&gt;
+
+&lt;p&gt;ちょっとしたことですが、ちょっとした記載だけで防げるトラブルや手間があると思いました。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;すべてのまとめの右側になにもない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/search&quot;&gt;まとめ一覧 [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;他のページには「人気のまとめ」や広告がありましたが、ここには何もありませんでした。と言ってもその方が見る側は便利なのかもしれません。このままでもいいかも。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;カテゴリ一覧に説明が冗長かもしれない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/categories&quot;&gt;カテゴリー覧 [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;簡単なカテゴリの説明、サブカテゴリも一緒に載っていて良いなと思いました。ただ、&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&amp;lt;カテゴリ名&amp;gt;に関する記事をまとめました。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;という記述は必要ないと。カテゴリ名はヘッダーで説明の上に載っているわけですから、余計な文章を読ませる必要はないのかと。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&amp;lt;カテゴリ名&amp;gt;に関するカテゴリをまとめました。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これはおそらく誤字ですよね。まとめたのはカテゴリではなく記事だと思います。この記述は下記のカテゴリで確認済みです。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;妊活&lt;/li&gt;
+  &lt;li&gt;出産&lt;/li&gt;
+  &lt;li&gt;赤ちゃん・育児&lt;/li&gt;
+  &lt;li&gt;子育て・家族&lt;/li&gt;
+  &lt;li&gt;病院&lt;/li&gt;
+  &lt;li&gt;住まい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;ライター一覧でフィルターや検索が使えない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/curators&quot;&gt;ライター一覧 [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;名前検索もできませんので、ひたすらページャーを進めて確認するしかありません。ライターというのは素人だと思いますし、医療分野なんかを読む時は良いライターから記事を探せるといいと思います。人気ライターとか、投稿ジャンルでフィルタリングされていると良いですね。これはヘビーユーザー向けなのかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;医療関係者の監修を募集を推すかどうか&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/12800&quot;&gt;医療関係者の皆様へ、ママリからのお願い [ママリ]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;病気・治療などの医療分野が関わるメディアサイトで一番気になることはこれです。専門家の監修があるかどうかです。「あくまでこれは私の実体験です」という内容を、記事に小さくではなくしっかり強調して書いてあるのならいいのですが、そうでないとママリを通してトラブルが発生する可能性があります。&lt;/p&gt;
+
+&lt;p&gt;自分で内容を考えないというのが一番の問題ですが、監修がある分に越したことはありません。現在はまだないにしても、そうしようとしている動きがあるのなら、もう少し目立つ場所にリンクを貼るのもいいのかと思いました。ユーザーがサイトの動きを知れるなら嬉しいかもしれません。それにその方が応募があるかも？でも専門家はこういうので探すより、コネで仕事を請け負うのかな。&lt;/p&gt;
+
+&lt;p&gt;今はフッターにこのページヘのリンクがあるので、おそらくユーザーはほとんど知りません。だから、あえて知らないままにさせるのならリンクの位置はここにある方がいいかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&quot;q&quot;&gt;問い合わせがママリQと違う&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/forms/d/1rWWbRwnqm__Q1dYbp6St54zCZJep80lUk6LrpUo18d8/viewform?entry_680334168=http://mamari.jp/&quot;&gt;お問い合わせ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qa.mamari.jp/contact&quot;&gt;ママリQのお問い合わせ&lt;/a&gt;は、ママリQのページ内に表示されるのですが、上記のママリのお問い合わせだと別サイトになっていました。Google Formで作成されているようで、それは問題ないと思うのですが、片方だけ別サイト（別デザイン）のページに飛ぶのが気になりました。&lt;/p&gt;
+
+&lt;p&gt;おそらくママリでは、「お問い合わせの種類」というセレクトボックスがあるのでGoogle Formを使っているのかと思います。メッセージの集計がGoogle Formだと楽なのかな。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-11&quot;&gt;問い合わせが2ページにまたぐ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/forms/d/1rWWbRwnqm__Q1dYbp6St54zCZJep80lUk6LrpUo18d8/formResponse&quot;&gt;お問い合わせ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1ページ目に、「お問い合わせの種類」と「お問い合わせ元ページ」の入力欄があり、2ページ目に名前や本文を記載します。「お問い合わせ元ページ」は編集しないで下さいとあるので、実質1ページ目で入力するのは、「お問い合わせの種類」のみです。わざわざ分ける必要性がわかりませんでした。1ページにまとめた方が、問い合わせる手間が省けます。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-12&quot;&gt;問い合わせ確認メールに内容が記載されていない&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/forms/d/1rWWbRwnqm__Q1dYbp6St54zCZJep80lUk6LrpUo18d8/formResponse&quot;&gt;お問い合わせ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ママリQではなくママリからの問い合わせを使ってみたのですが、自動返信の確認メールに自分が入力した内容が記載されていませんでした。他のサービスでも感じるのですが、この自動返信のメールに、選択したセレクトボックスの内容や、自分で入力した内容が書かれていないと不安になります。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-13&quot;&gt;離婚カテゴリがない&lt;/h2&gt;
+
+&lt;p&gt;これが不思議でした。離婚はママにとって大きなイベントだと思います。もちろんママ以外もですが。&lt;a href=&quot;http://qa.mamari.jp/&quot;&gt;ママリQ&lt;/a&gt;の場合は、「家族・旦那」とカテゴリがあるからここが代用されているかもしれません。ただ、離婚だと法律が関わってくるので、それを書けるライターがいないのかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&quot;dv&quot;&gt;虐待・DVカテゴリがない&lt;/h2&gt;
+
+&lt;p&gt;これも不思議でした。キャッチコピーに「家族の毎日を笑顔にする情報サイト」とありますが、笑顔がない家族向けのカテゴリは作らないのかな。もとから笑顔がある家族向けなのかも。個人的にはあった方がいいなと思いました。でも、離婚カテゴリと同じでこの記事を書けるライターは少ないかと思います。リスクも高いし難しいです。&lt;/p&gt;
+
+&lt;h1 id=&quot;qpc&quot;&gt;ママリQ(PC)&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-14&quot;&gt;投稿やコメントはスマホでしかできないのか？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qa.mamari.jp/&quot;&gt;ママリQ｜家族の毎日を笑顔にする、女性限定Q&amp;amp;Aアプリ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/&quot;&gt;ママリ&lt;/a&gt;ではログイン機能があったのに、ママリQではありません。パソコンでは閲覧のみしか出来ないのであれば、そのことを目立つところに書いておいて欲しいなと思いました。ないものをを探すのはストレスが溜まりますし、使いたくないなと思いました。投稿・コメントする気がないなら、話は別です。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-15&quot;&gt;記事は検索できないのか？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qa.mamari.jp/keywords&quot;&gt;キーワード一覧 [ママリQ] 女性限定Q&amp;amp;Aアプリ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;検索機能が見当たりませんでした。上記のキーワードから探せということなのかと思ったのですが、凄い面倒です。全キーワードが1ページに表示されるのならまだしも、現在5ページに分かれています。今の1ページの記載量が少ないのでさらに不便に感じました。&lt;/p&gt;
+
+&lt;h2 id=&quot;top5&quot;&gt;ランキングがTOP5までしか見れない&lt;/h2&gt;
+
+&lt;p&gt;5つまでしか見られないのは少なすぎます。ランキング個別ページがあった方が、滞在時間も伸びるかと。ランキングページが充実してるサイトは、見ていて楽しいです。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-16&quot;&gt;サイト説明のある場所がわかりずらい&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mamari.jp/&quot;&gt;ママリ&lt;/a&gt;ではサイト説明はトップページにありました。しかし、ママリQでは&lt;a href=&quot;http://qa.mamari.jp/guideline&quot;&gt;マナーと注意点のページ&lt;/a&gt;にあります。これでは分かりづらいです。そのため、下記のフッターにある「ママリQについて」という見出し自体にも「マナーと注意点」へのリンクを貼っておくといいと思いました。内容が少ないのですので、ページ自体は分ける必要はないと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-07-06-mamari-q-about.jpg&quot; alt=&quot;ママリQのフッター&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-17&quot;&gt;ユーザー一覧の表示に10秒以上かかる&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qa.mamari.jp/members&quot;&gt;ユーザー一覧 [ママリQ] 女性限定Q&amp;amp;Aアプリ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;長いと16秒かかりました。OX X El Capitan(10.11.5)のGoogle Chrome(51.0.2704.103 64-bit)で確認しました。他のページではすんなり表示されましたがここだけ異常です。ユーザー一覧にはフィルタリングもないので使うことは無いのかもしれませんが、気づいたので書き残しておきます。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-18&quot;&gt;「マナーと注意点」で気づいたこと&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;3.アドバイスの確かさは自分で判断しましょう&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これはぜひ押して欲しいと思いました。全く自分で考えない人もいます。その人達がママリをきっかけに自分で考えるようになるのなら、それはとても良いウェブサイトになるでしょう。ママリのキャッチコピーに「家族の毎日を笑顔にする情報サイト」とありました。この言葉通りにするなら、ママリのユーザーには、ママリの記事を鵜呑みにせずに参考にする使い方を促してあげるといいと思います。もちろんユーザーの質にもよりますが。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;4.疑問を投稿しましょう&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;マナーでも注意点でも無い気がします。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;男性の投稿、または男性をママリQに誘導するような言動&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これが削除ガイドラインに記載されていて驚きました。ママがメインのサイトでもあるが、他の家族にも役に立つようなサイトなのかと思っていましたが違うようです。コミュニティから男性を排除する方針のようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-07-06-mamari-q-connehito-official.jpg&quot; alt=&quot;Connehito公式サイトによるママリQの説明&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://connehito.com/&quot;&gt;運営元であるConnehitoの公式サイト&lt;/a&gt;を見たところ、ママリQはママ専用であるという記載を発見しました。それならmamariQのヘッダーにキャッチコピーとして書いておくと良いかと。男性がいないから愚痴れる、はけ口にできる、相談できるなど、女性ユーザーからの魅力はあると思います。だからサイトの良さとして押していくのもありなのではと思いました。もしかしたら、そうすると男女差別に繋がって他から何か言われるのかな。&lt;/p&gt;
+
+&lt;p&gt;ただ、「ママ専用」ではなく「女性専用」の方が良い気もします。女性なら今はママでなくても、これからママになる可能性があります。「女性専用」なら学生も使う・使えるサイトとして促せるかと。&lt;/p&gt;
+
+&lt;p&gt;この女性専用に関しては、他に気になることがありましたので別途後述します。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、iPhoneアプリの起動時には女性限定という記述が表示されました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-07-06-mamari-q-iphone-start.jpg&quot; alt=&quot;iPhoneでの起動画面&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;q-1&quot;&gt;ママリQ(スマホ)&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-19&quot;&gt;お気に入りタグが最初から登録されている&lt;/h2&gt;
+
+&lt;p&gt;登録時にデフォルトでお気に入りになっているタグがあります。これは外すのが面倒なのでやめたほうがいいかと。現在は9個がデフォルトになっているので、でせめて3個程度にした方がいいかもしれません。そもそもユーザーがお気に入りに登録したいから登録するのであって、そうではない場合は外したりする必要が出てしまいます。もしかしたら、予め設定しておくというのは、機能を把握してもらうためのユーザーへの処置であるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;お気に入りタグのタイムラインが用意されているのは良かったです。&lt;/p&gt;
+
+&lt;h1 id=&quot;q-2&quot;&gt;ママリQはママ専用のままでいくのか？&lt;/h1&gt;
+
+&lt;p&gt;先述した、ママリQでは男性の投稿が削除対象になっていることを見て、ママリQの方向性が気になり調べてみました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;もう1つは「サービスに対する愛があるか」ですね。僕らが提供しているサービスの価値、平たく言えば人口を増やすことがママリというサービスのテーマで、「家族が生きていくなかのライフイベントにまつわる悩み事を解決したい」「その体験を通じて、良い家族像を作りたい」ということに対して、パッションを感じているか。話をしていて、自分のキャリアアップの手段としてコネヒトを考えている人ではなくて、サービスを純粋に良いと思うような動機がどれくらい強くあるか、が大事だと思っています。&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://www.wantedly.com/companies/connehito/post_articles/27843&quot;&gt;【起業家対談】nanapi × ママリの仕掛け人が語る「人を動かすコミュニティの作り方」（前編） by 大湯 俊介 | コネヒト株式会社&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;上記はConnehitoが人を採用するときに重視していることです。家族を良くする原因を女性だけに留めるのかはわかりませんが、目的は家族を良くしていくことだと感じました。その目的のためなら、ママ専用という縛りを外すかもしれませんね。ただ、今は女性専用というのがニッチな魅力となっていると思うので、女性以外も絡むとなると別サービスの展開になるだろうなと思いました。新サービスとママリが連携して、ユーザーが知らないところで影響していれば、弊害はないのかもしれません。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ユーザーが起きてる時間のなかで、何回ママリって単語を思い出してくれるかということを大事にしています。それを指標としてサービスを創るのが良いのではないでしょうか。&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://www.wantedly.com/companies/connehito/post_articles/27843&quot;&gt;【起業家対談】nanapi × ママリの仕掛け人が語る「人を動かすコミュニティの作り方」（前編） by 大湯 俊介 | コネヒト株式会社&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これはママの間でということなのでしょうか？男性からでも広まるようにするなら、運営の方針が変わるのではと思いました。私は男女両方の意見が聞けた方が解決に繋がると思っています。相手が悪いとだけで終わらせてしまうのなら、きっと同じ問題に何度も立ち会うでしょう。異性からだと批判を受けやすいということかもしれませんが、同性からでも批判を受けることはありますし、批判することがマナー違反とは思いません。言葉を選んでちゃんと伝えられるかがマナーだと思います。そうしたらママリがいい機会になるかもしれません。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;サービスを通じて人の生活をよくするためには、大きなトライが不可欠です。ママリを通じて金融や復職、住宅などの領域に踏み込みたいと思っていましたが、そのような分野でチャレンジするためには数十億以上の単位での資金が必要です。自分の会社だけ取り組むには、スタート地点に立つだけでも時間がかかりすぎてしまうと感じました。やりたいことが最短距離でできると考えて、今回、KDDIグループという力強いパートナーを選びました。&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://www.wantedly.com/companies/connehito/post_articles/29348&quot;&gt;「いつだって､リスクはこの瞬間が最小」23歳で起業＆28歳でM＆Aを選んだ経営者が今思うこと by 大湯 俊介 | コネヒト株式会社&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これを見てママ限定から外した取り組みを行うだろうなと思いました。既存の記事は、ママ向けに書いてあったとしても、ママ以外にも役立つ可能性はあります。どんどん活かしていく形になるでしょう。それに「Syn.」プロジェクトで他サービスとの連携も考えられます。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;コネヒトではお昼休み明けの10分間、プロダクトに触れる時間を必ず設けるようにしています。 具体的には、Q&amp;amp;Aアプリ「ママリQ」を開き、ユーザーが投稿する日々の疑問や悩みに関するコメントのチェックをします。オフィスには約40人のメンバーがいますが、なんと職種に関わらず40人全員が毎日、この「ママリQタイム」をとっています。&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://www.wantedly.com/companies/connehito/post_articles/28514&quot;&gt;ヒミツは｢1日10分｣の◯◯!? 今日からできるプロダクトドリブンな組織のつくり方 by 宇都宮 雅敬 | コネヒト株式会社&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ママリQを女性限定とした場合は、男性社員は投稿しないのかが気になりました。上記によると、触れるとは閲覧だけについて言っていますね。無理して投稿する必要もないですし、それでいいのかも。ただ、たまにテスト投稿をしてみるのはいいかもしれません。&lt;/p&gt;
+
+&lt;p&gt;結論として、ママ以外も対象した取り組みを行われると思います。その過程でママリQの運用方針は変わるでしょう。私はそれがいい影響を与えると考えます。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jul 2016 18:04:00 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/07/06/mamari.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/07/06/mamari.html</guid>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>数学ガールの秘密ノート／式とグラフ</title>
+        <description>&lt;p&gt;初めて数学ガールを手にしました。秘密ノートとただの数学ガールの2種類があり、秘密ノートの方が優しめの内容らしいのでこちらから読んでみることに。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;数式の世界とそれ以外の世界で解は行き来する&lt;/h1&gt;
+
+&lt;p&gt;内容は連立方程式と比例、反比例のグラフが分かれば読めます。これは中学生の方の時に読みたかったですね。この本は数学の説明ではなく、説明の過程が参考になる本でした。例えば、2つの命題が同値であるかを説明する時に、命題Aは「数式の世界の話」、命題Bは「図/グラフの世界の話」というように、数や式が出てきた時に、それはどの世界の話かを教えてくれます。そして、この2つの命題によって異なる世界を行き来している。このようにして、知識や物事がつながっていく過程を見せてくれました。&lt;/p&gt;
+
+&lt;p&gt;今考えていること、関係しているものは何か？それはどの世界のでの話かを意識して命題を作ります。解きたい命題を、数式の命題に落とし込んでそこで解を得る。その解を数式の世界から、本来の求めたいものがある世界に持ってきて本当の解となります。数式の世界とそれ以外の世界。これを分けて考えるのはとても大事なことですね。これを学生当時に読んでいれば、もっと理解しやすかったでしょう。さらに言えば数学を楽しんでいたでしょう。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;異なる世界が繋がると話は面白い&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;お兄ちゃんの話がおもしろいのは、&amp;lt;式の形&amp;gt;と&amp;lt;グラフの形&amp;gt;を行ったり来たりするからなの&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;近所の少女、ユーリが言った一言。これは物事の繋がりを知れるということだと思う。数学だけでなく、脚本でも伏線の回収が上手いと面白いのは、これに似ている気がする。これが何と繋がっているかを見つけるまでが学習の大変さだと思う。そこを教えてあげれば、後は勝手に伸びていくだろう。挫折する人は、これを見つけられるかどうかだと思う。新しく自分で見つけるのは連想ゲームのようだ。&lt;/p&gt;
+
+&lt;p&gt;さきほど世界を行き来する話を挙げた。この2つの世界を相手と自分で置き換えてみると、分かりやすく説明できるようになるだろう。相手の知っているものと、自分の知っているものを繋げると腑に落ちやすい。相手が自分の世界と新しい知識が繋がった瞬間、知って理解する楽しみが伝えられるかもしれない。&lt;/p&gt;
+
+&lt;p&gt;私はこの本に出てきた、方程式の中に面積を見出すのが面白かったです。特に反比例のグラフの点は、常に同じ面積の長方形を作っていることは驚きました。面積は縦と横の積で求まる。求め方は同じなのに、見えてくるものが広がった気がします。長方形をイメージに使うことで、より記憶に結びつきやすくなると思いました。私にとってグラフと面積は、まだ別の世界の話だったようです。いや、繋がっていなかったと言ったほうがいいかな。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;計算過程を書くという思いやり&lt;/h1&gt;
+
+&lt;p&gt;計算過程は採点者へのメッセージである。この本には、少女の問いにそう答えていました。方程式のイコールを揃えるのも、2に1を代入するという文章も、相手にしっかりと伝えるためです。文章だけではなく、数式の中にも思いやりというのを感じられます。「何でこんな面倒なことをしないと行けないの？」と言われたら、一度採点させてみましょう。相手が理解できていたら正解とする。子供はどうしたら、紙面上で相手が理解しているかを確認するでしょうか？答えが書いてあったら大丈夫？いえ、ちゃんと答えまで導き、思考の過程が書いてあった方が理解しているな思えますし、安心して丸をあげられるでしょう。解答もコミュニケーションであることを実際に感じてもらえれば、数学も楽しくなるのではと思います。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Jul 2016 23:04:59 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/07/03/math-girl-mystery-note-formula-and-graph.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/07/03/math-girl-mystery-note-formula-and-graph.html</guid>
+        
+        <category>book</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Paizaのアイディア</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://paiza.jp/mypage/job-info?lan=firstview&quot;&gt;Paiza&lt;/a&gt;を使ってみて気がついたことをまとめました。ここに書いてある意見は、運営へ報告済みです。他の方が同じ問い合わせをしてしまわないためにも、ここに残しておきます。ちなみに、Paiza運営事務局からは、問い合わせ後にしっかりとした返信を頂きました。現在、色々と準備中とのことです。全てを無理して受けれずにPaizaの良さを残しつつ、発展していくと良いですね。&lt;/p&gt;
+
+&lt;p&gt;ここでの意見は、私が既存の機能を見落としている場合があります。また、既に反映がされている場合もあります。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;スキルチェックコーディング&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;答えを見せるなど、次の学習へ繋げる&lt;/h2&gt;
+
+&lt;p&gt;問題は面白く、やりごたえがあるのですが、回答を見ることが出来ないのが残念です。より精確な実力を知るために回答の公開を控えていると思いますが、回答後には見れるようにして頂けると大変助かります。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“得意”が伸びる、社会を創る。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“日本のIT/Webエンジニアを、世界レベルに引き上げる”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;上記は&lt;a href=&quot;http://www.gi-no.jp/company/mission/&quot;&gt;Paizaの運営元であるギノ株式会社&lt;/a&gt;の経営理念です。とても良い言葉だと思います。私も自分の学びの過程を記録に残し、他の人達に「この人に出来るなら自分にでも出来そうだ」と思わせて、チャレンジしてもらう人を増やしたいと思っているため、この考えに共感しました。&lt;/p&gt;
+
+&lt;p&gt;問題の答えや必要な知識の用語など、次の学習へ繋げる内容を公開することは、上記の目的をさらに確実にするものだと思います。実際に考えて取り組んだ問題だからこそ、身につく力や得るものも多いので、それに関連付けて新しい知識を身につけられたら学習が捗るなと思います。解答時には出来なくても、後から出来るようになるなら、できる人が増えるということで人材も増えるのではないでしょうか。気軽にこれらの問題に取り組み、それをきっかけにプログラミングを身に着けていく人が増えればいいなと思いました。&lt;/p&gt;
+
+&lt;p&gt;ですが、答えを公開することによって、正確な実力が測れないという問題があると思います。そこで2つの提案を描いておきます。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;1. 問題の公開と答えの公開の時期をずらす&lt;/h3&gt;
+
+&lt;p&gt;新しい問題を追加する時に、古い問題の答えを公開するのはいかがでしょうか？それか一部の問題だけ公開するのも良いと思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;2. より正確に実力を測りたい人に、非公開の問題を提供する&lt;/h3&gt;
+
+&lt;p&gt;企業からスカウトしたい人などに対して、一般公開の問題とは別に、非公開の問題を用意するのどうでしょうか？一般公開の問題でユーザーをフィルタリングして、さらに興味のある人にだけ特別な問題を用意するのも良いと思います。この非公開の問題は、段階的に用意しても良いかと。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;ユーザーに問題を作成してもらう&lt;/h2&gt;
+
+&lt;p&gt;問いたいテーマをpaizaから提供して、それを問う問題をユーザーが作るのも良いかと思いました。作られた問題を見ることで、プログラミング以外の能力も知ることができると思います。1つだけでなく、複数の答えがある解答をユーザーが出来るととても面白いと思います。デザインの問題など、プログラミング以外のITの分野もあるとより良いかと。&lt;/p&gt;
+
+&lt;p&gt;求人案件の中にはメディア事業もあるので、プログラミング技術だけでなく、コンテンツについて考えられるかを見てみたいところもあると思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;ランキングの仕組みの詳細を記述する&lt;/h2&gt;
+
+&lt;p&gt;スキルチェックコーディングの提出画面には、&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;このランキングは最大50名を抽出して判定しています。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;と記載がありますが、これは最新の解答者から50名なのでしょうか？なぜ50名なのかもわかりません。何故か1位なども見ることが出来ず、自分の前後のスコアしかわからない状況です。他にどこかで見るところがあるのでしょうか？そこへの参考リンクが順位表のところにあると助かります。&lt;/p&gt;
+
+&lt;p&gt;この件については知り合いと話していたのですが、実際はランキングというの嘘のものではないか？と思えてしまいます。せっかくの良い機能だと思うのに、そこだけが残念です。ランキングは詳細に見れるほどモチベーションに良い影響を与えると思います。&lt;/p&gt;
+
+&lt;p&gt;ランキングについてはpaizaから回答を頂きました。総計から50件ではなく、直近の回答者から50件を取得しているようです。(2016/6/29)&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;バグを見つけて修正する問題&lt;/h2&gt;
+
+&lt;p&gt;一からコードを書くのではなく、既存のコードのバグを見つける問題も面白いと思いました。一箇所の変更でバグのバリエーションを増やせるので、解答が漏れてしまう対策にも繋げやすいかと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;ライブラリを指定した問題&lt;/h2&gt;
+
+&lt;p&gt;JavaScriptならjQueryやUnderScore、RubyならActiveRecordなど、使用するライブラリを指定した問題があると問題の幅が広がると思いました。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-8&quot;&gt;プロフィール&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;プロフィール入力率が100%にならない件&lt;/h2&gt;
+
+&lt;p&gt;マネジメント経験、希望勤務地は選択しない場合はデフォルト値が表示されています。そのデフォルト値がリストにないため、選択することは出来ません。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;デフォルト値&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;マネジメント経験：経験なし&lt;/li&gt;
+  &lt;li&gt;希望勤務地：指定なし（勤務地問わず）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;100%の人のみを抽出するフィルターを使っているならば、ここだけはカウントしなくてもいいのではと思いました。（特に希望勤務地）&lt;/p&gt;
+
+&lt;p&gt;また、希望勤務地は、希望しない勤務地を入れれることができても良い気がしました。例えば熊本や福島以外を希望する人もいると思いますので、そのような場合に2県以外が全て表示されると見づらいと思います。ですが、見る側が常にフィルターが使えているのなら問題はないかと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;haskell&quot;&gt;希望条件の開発言語にHaskellがない&lt;/h2&gt;
+
+&lt;p&gt;スキルチェックにはHaskell(Beta)がありましたが、表題の部分にはありませんでした。また、AltJSではCoffeeScriptはあるのにTypeScriptはありませんでした。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;語学のレベル&lt;/h2&gt;
+
+&lt;p&gt;おそらく、表示の順番的に「ドキュメントが読める」より「日常会話ができる」の方がレベルが上のつもりで表示されているかと思います。ですが、日常会話とドキュメントだとレベルが比較しにくい気もしました。セレクトボックスよりチェックボックスがいいかもしれません。もし、英語力も検討している企業なら、下記の項目が用意されているとさらに分かりやすい気もしました。余計な手間を省ける可能性があります。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ドキュメントが読める&lt;/li&gt;
+  &lt;li&gt;検索エンジンから英語のサイトを検索する。&lt;/li&gt;
+  &lt;li&gt;StackOverflow（英語版）を活用することがある。&lt;/li&gt;
+  &lt;li&gt;日常会話できる（チャット・メールベース）&lt;/li&gt;
+  &lt;li&gt;日常会話できる（通話などでのリアルタイム）&lt;/li&gt;
+  &lt;li&gt;ビジネス会話レベル（チェット・メールベース）&lt;/li&gt;
+  &lt;li&gt;ビジネス会話レベル（通話などでのリアルタイム）&lt;/li&gt;
+  &lt;li&gt;ネイティブレベル&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-11&quot;&gt;求人詳細画面&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-12&quot;&gt;企業の公式サイトへのリンクがない&lt;/h2&gt;
+&lt;p&gt;例 : &lt;a href=&quot;http://paiza.jp/job_offers/1190?lan=job-info_first&quot;&gt;http://paiza.jp/job_offers/1190?lan=job-info_first&lt;/a&gt;&lt;br /&gt;
+企業への公式サイトへのリンクが見当たりませんでした。欄やボタンがあると良いのではないかと思いました。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-13&quot;&gt;鍵マークの意味&lt;/h2&gt;
+
+&lt;p&gt;下記画像にある求人詳細画面の鍵マークの意味がわかりませんでした。説明を指定の箇所に書いておくと良いと思いました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-07-02_paiza-key-icon.jpg&quot; alt=&quot;鍵マークの説明&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Paizaから回答を頂きました。これはランクを満たしている人のみが閲覧できる情報のようです。満たしていない人には、「現在のランクでは閲覧ができません。 ランク●以上 で閲覧可能です。」と表示されるとのこと。(2016/07/04)&lt;/p&gt;
+
+&lt;h2 id=&quot;skype&quot;&gt;Skype面接に必要な履歴書は使いまわされるのか？&lt;/h2&gt;
+
+&lt;p&gt;PaizaにはSkype面談を希望の際は、履歴書と職務経歴書をPaiza運営事務局に送るようにと記載されています。この書類はPaizaが今後、自分が応募していく複数の企業の間で使い回されていくのかがわかりませんでした。カジュアル面談、通常面接の場合どちらでも下記の注意書きは出ます。カジュアル面談でSkype面談だと、どのように受け取られるかが気になりました。また、複数で使い回す場合は、志望動機をどうすればいいか分かりませんでした。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-07-04_paiza-casual-skype.jpg&quot; alt=&quot;Skype面接の場合の注意書き&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;paizaio&quot;&gt;paiza.io&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://paiza.io/&quot;&gt;https://paiza.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tweet&quot;&gt;ヘッダーのTweetボタン&lt;/h2&gt;
+
+&lt;p&gt;画面下部のヘッダー（灰色）に「Tweet」というボタンが2つありました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;イメージ図&lt;/strong&gt;&lt;br /&gt;
+[Follow @paizaIO_jp]  [Follow @paizaIO]  [Tweet]  [Tweet]&lt;/p&gt;
+
+&lt;p&gt;違いはつぶやきの内容が、日本語か英語になるかの違いでした。ボタンの見た目からはわからないので、1つだけでいいと思います。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 21:24:06 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/06/30/paiza.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/06/30/paiza.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>お世話になっている料理レシピ</title>
+        <description>&lt;p&gt;保存の効くレシピを増やしたいです。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;メイン&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;野菜炒め&lt;/li&gt;
+  &lt;li&gt;うどん&lt;/li&gt;
+  &lt;li&gt;ざるそば&lt;/li&gt;
+  &lt;li&gt;スープに野菜を突っ込んで煮るだけ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;時短&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;溶いた卵をレンジでチン&lt;/li&gt;
+  &lt;li&gt;バナナジュース&lt;/li&gt;
+  &lt;li&gt;レンジで焼きバナナ。はちみつをかける。&lt;/li&gt;
+  &lt;li&gt;水抜き豆腐を肉が割りに&lt;/li&gt;
+  &lt;li&gt;インスタント味噌汁に乾燥わかめを入れる。&lt;/li&gt;
+  &lt;li&gt;玉ねぎを丸ごとレンジで7分チンして、コンソスープに入れる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;トーストの上に載せる&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;キャベツの千切り&lt;/li&gt;
+  &lt;li&gt;納豆&lt;/li&gt;
+  &lt;li&gt;チーズ&lt;/li&gt;
+  &lt;li&gt;バター&lt;/li&gt;
+  &lt;li&gt;マーガリン&lt;/li&gt;
+  &lt;li&gt;マヨネーズ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;便利な材料&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;玉ねぎ&lt;/li&gt;
+  &lt;li&gt;ピーマン&lt;/li&gt;
+  &lt;li&gt;もやし&lt;/li&gt;
+  &lt;li&gt;納豆&lt;/li&gt;
+  &lt;li&gt;豆腐&lt;/li&gt;
+  &lt;li&gt;麺&lt;/li&gt;
+  &lt;li&gt;はちみつ&lt;/li&gt;
+  &lt;li&gt;ヨーグルト&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 May 2016 10:08:57 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/05/24/simple-cook.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/05/24/simple-cook.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>読みたい漫画リスト</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;アニメも見ていない&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;君死ニタマフ事ナカレ&lt;/li&gt;
+  &lt;li&gt;今日から俺は！！&lt;/li&gt;
+  &lt;li&gt;天使な小生意気&lt;/li&gt;
+  &lt;li&gt;空が灰色だから&lt;/li&gt;
+  &lt;li&gt;死にたくなるしょうもない日々が死にたくなるくらいしょうもなくて死ぬほど死にたくない日々&lt;/li&gt;
+  &lt;li&gt;暴想処女&lt;/li&gt;
+  &lt;li&gt;働かないふたり&lt;/li&gt;
+  &lt;li&gt;お酒は夫婦になってから&lt;/li&gt;
+  &lt;li&gt;波よ聞いてくれ&lt;/li&gt;
+  &lt;li&gt;ゴールデンカムイ&lt;/li&gt;
+  &lt;li&gt;ドリフターズ&lt;/li&gt;
+  &lt;li&gt;外天楼&lt;/li&gt;
+  &lt;li&gt;惑星のさみだれ&lt;/li&gt;
+  &lt;li&gt;イエスタデイをうたって&lt;/li&gt;
+  &lt;li&gt;背すじをピン！と～鹿高競技ダンス部へようこそ～&lt;/li&gt;
+  &lt;li&gt;ボールルームへようこそ&lt;/li&gt;
+  &lt;li&gt;BECK&lt;/li&gt;
+  &lt;li&gt;殺し屋1&lt;/li&gt;
+  &lt;li&gt;特攻の島&lt;/li&gt;
+  &lt;li&gt;お兄ちゃんのことなんかぜんぜん好きじゃないんだからねっ！！&lt;/li&gt;
+  &lt;li&gt;ノノノノ&lt;/li&gt;
+  &lt;li&gt;かくかくしかじか&lt;/li&gt;
+  &lt;li&gt;ハルロック&lt;/li&gt;
+  &lt;li&gt;ムショ医&lt;/li&gt;
+  &lt;li&gt;パーツのぱ&lt;/li&gt;
+  &lt;li&gt;決してマネしないでください。&lt;/li&gt;
+  &lt;li&gt;スティーブズ&lt;/li&gt;
+  &lt;li&gt;デザインノイロハ&lt;/li&gt;
+  &lt;li&gt;BLOODY MONDAY&lt;/li&gt;
+  &lt;li&gt;orange&lt;/li&gt;
+  &lt;li&gt;海街diary&lt;/li&gt;
+  &lt;li&gt;コウノドリ&lt;/li&gt;
+  &lt;li&gt;金色のガッシュ!!&lt;/li&gt;
+  &lt;li&gt;キングダム&lt;/li&gt;
+  &lt;li&gt;あさひなぐ&lt;/li&gt;
+  &lt;li&gt;BLUE GIANT&lt;/li&gt;
+  &lt;li&gt;ib -インスタントバレット-&lt;/li&gt;
+  &lt;li&gt;裁判長!ここは懲役4年でどうすか&lt;/li&gt;
+  &lt;li&gt;ハイスコアガール&lt;/li&gt;
+  &lt;li&gt;ミスミソウ&lt;/li&gt;
+  &lt;li&gt;なるたる&lt;/li&gt;
+  &lt;li&gt;後遺症ラジオ&lt;/li&gt;
+  &lt;li&gt;伊藤潤二自選傑作集&lt;/li&gt;
+  &lt;li&gt;恐之本&lt;/li&gt;
+  &lt;li&gt;蟲姫&lt;/li&gt;
+  &lt;li&gt;服なんて、どうでもいいと思ってた。&lt;/li&gt;
+  &lt;li&gt;フリンジマン&lt;/li&gt;
+  &lt;li&gt;血界戦線&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;アニメでは見た&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;のんのんびより&lt;/li&gt;
+  &lt;li&gt;エルフェンリート&lt;/li&gt;
+  &lt;li&gt;坂本ですが?&lt;/li&gt;
+  &lt;li&gt;SLAM DUNK&lt;/li&gt;
+  &lt;li&gt;ブラック・ラグーン&lt;/li&gt;
+  &lt;li&gt;ちはやふる&lt;/li&gt;
+  &lt;li&gt;ぼくらの&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;読んだ&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kiss×sis&lt;/li&gt;
+  &lt;li&gt;僕だけがいない街&lt;/li&gt;
+  &lt;li&gt;恋は雨上がりのように&lt;/li&gt;
+  &lt;li&gt;僕のヒーローアカデミア&lt;/li&gt;
+  &lt;li&gt;王様のバイキング&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 May 2016 10:05:51 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/05/24/wanna-read-commic.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/05/24/wanna-read-commic.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>まとめテーマリスト</title>
+        <description>&lt;p&gt;まとめたいな思っているリストです。いつもYamlでまとめています。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;済&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Macアプリ&lt;/li&gt;
+  &lt;li&gt;使用中のSNS&lt;/li&gt;
+  &lt;li&gt;ハマってるゲーム&lt;/li&gt;
+  &lt;li&gt;Webサービス&lt;/li&gt;
+  &lt;li&gt;ウェブサイト&lt;/li&gt;
+  &lt;li&gt;プログラミング言語&lt;/li&gt;
+  &lt;li&gt;趣味&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;未&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;買ったもの&lt;/li&gt;
+  &lt;li&gt;開発環境&lt;/li&gt;
+  &lt;li&gt;CUIソフト&lt;/li&gt;
+  &lt;li&gt;習慣&lt;/li&gt;
+  &lt;li&gt;苦手克服&lt;/li&gt;
+  &lt;li&gt;目標&lt;/li&gt;
+  &lt;li&gt;料理のレシピ&lt;/li&gt;
+  &lt;li&gt;ライフハック&lt;/li&gt;
+  &lt;li&gt;ウェブページ&lt;/li&gt;
+  &lt;li&gt;Q&amp;amp;A&lt;/li&gt;
+  &lt;li&gt;RSS購読しているもの&lt;/li&gt;
+  &lt;li&gt;iPhoneアプリ&lt;/li&gt;
+  &lt;li&gt;iPhoneゲーム&lt;/li&gt;
+  &lt;li&gt;ガジェット&lt;/li&gt;
+  &lt;li&gt;vimプラグイン&lt;/li&gt;
+  &lt;li&gt;欲しい機能&lt;/li&gt;
+  &lt;li&gt;色々なサイト・アプリの改善案&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;ランキング&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;曲&lt;/li&gt;
+  &lt;li&gt;mad&lt;/li&gt;
+  &lt;li&gt;動画&lt;/li&gt;
+  &lt;li&gt;photoshopチュートリアル&lt;/li&gt;
+  &lt;li&gt;漫画&lt;/li&gt;
+  &lt;li&gt;アニメ&lt;/li&gt;
+  &lt;li&gt;映画&lt;/li&gt;
+  &lt;li&gt;ドラマ&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 May 2016 09:18:00 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/05/24/yaml-list.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/05/24/yaml-list.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Pixivのアイディア</title>
+        <description>&lt;p&gt;Pixivにあったらいいなと思う機能や、使いづらいところをまとめました。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;作品の一覧&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;イラストの一覧をブラウザの幅全域に広げる&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-follow-user.jpg&quot; alt=&quot;ランキングの画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pinterest-home.jpg&quot; alt=&quot;Pinterestのホーム画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;イラストを探す時は小さいサムネイルを一度にたくさん見ながらスクロールできると便利かと。&lt;a href=&quot;https://jp.pinterest.com/&quot;&gt;Pinterest&lt;/a&gt;なら表示域がブラウザの幅全体なのでとても見やすいです。画像をスクロールしながら探すのがとてもやりやすい。さらにPinterestのホーム画面は、自分のフォローしている新着画面になっているのも嬉しいです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-ranking.jpg&quot; alt=&quot;フォロー新着の画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ランキング画面だと、サムネイルが他のページに比べて大きいです。1画面に6枚しか表示できませんが、フォロー新着だと15枚も表示できます。じっくり見たいなら個別ページに飛びますし、小さくても問題はないと思います。ただ、大きめな方が見やすく便利なときもあるのでここはオプションで変えれると便利です。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;一度見た作品は表示させない&lt;/h2&gt;
+
+&lt;p&gt;検索を一度やめる時に、前回見た終わったらところから再度検索しようしてもまた1ページ目から見る必要があるので不便です。フォローが増えると新着の作品数も増えるので、まだ見ていないのも埋もれてしまいます。これはPinterestも同じです。なので一度見た作品は一覧に表示させない機能があると便利だと思います。この見たという判断は、個別ページに飛んでからではなく一覧に表示された時点で判定されると良いです。気になるのがあればその場でブックマークする機能をつければ良いと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;タグ・検索のフォロー機能&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-favorite-tag.jpg&quot; alt=&quot;注目のタグの画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;現在トップページにお気に入りタグというテキストリンクがあります。これはクリックすると、そのキーワードでの検索結果に移動します。そのため、お気に入りタグが複数ある場合は、新着を見るのに全てのタグをクリックしないといけません。タグのブックマークとしては良いのですが、作品を探すには不便過ぎます。&lt;/p&gt;
+
+&lt;p&gt;一方、フォローユーザーの新着作品のページはあるのにタグにはありません。タグにもフォロー機能があるといいですね。タグだけではなく、設定した検索オプションでのフォローが出来るとさらにいいと思います。「雲のタグを含んでいて、bookmark数が100以上の作品」をフォローとか、フォローページが使い分けれると便利だろうな。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;ランキングで特定の作品を非表示にしたい&lt;/h2&gt;
+
+&lt;p&gt;ランキングページは面白い作品がないかを探すのに使っています。ですが、「おそ松さん」で多すぎてランキングで他の作品が埋もれてしまっている時がありました。あれを見た時にランキングページはつまらないなと思いました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-thumnail-filter-sample.jpg&quot; alt=&quot;サムネイルフィルターのサンプル&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ユーザー設定でサムネイルフィルターという機能があります。これはプレミアム専用らしいです。どういう機能か上記のサンプルを見ることが出来ました。もしかして、上記の「非表示」という内容にそのまま置き換わるのでしょうか？そうでしたら、ランキングページがこの画像で埋め尽くされてしまいます。DBからフィルターにかかるものは取得自体を行わずに、代わりに100以降のランキングも読み込んでランキングを生成するとかなら使い道が大きいなと思いました。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;自分の作品情報をエクスポート&lt;/h2&gt;
+
+&lt;p&gt;Pixivに投稿していたけど、他のSNSにも投稿したいということがあるかもしれません。私は詳細に使用した素材へのリンクを張っているのでこれをコピペして移していくとなると大変です。そこで&lt;a href=&quot;https://gist.github.com/mitsuru793/544799043ca3d3760e97&quot;&gt;一括取得できるRubyスクリプト&lt;/a&gt;を書きました。スクレイピングで取得しています。公式APIなどを公開してくれればもっとスムーズになるでしょう。&lt;/p&gt;
+
+&lt;p&gt;エクスポートが充実してるサイトは、移行がしやすいのでとりあえず試してみようと気持ちになります。ですが、一切そういうのがないと後でそのサービスを使って後悔することも。これを防ぐには作品情報を自分のローカルで独自に管理しておくことです。そこから自作テンプレートを通して、投稿するようにしておけばどのサービスにも対応できます。私はYAMLで作品情報やファイルを管理しています。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;一括投稿できない&lt;/h2&gt;
+
+&lt;p&gt;私は作品情報や画像はYAMLで管理しています。他のサイトにも投稿したりと柔軟に対応できるようにするためです。投稿APIさえ提供してもらえれば、一度で複数サイトに投稿やインポートなどを自作スクリプトで簡単に対応することができます。&lt;/p&gt;
+
+&lt;p&gt;Pixivのは投稿する作業はとても面倒に感じます。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-7&quot;&gt;タグ&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;お気に入りの登録&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-favorite-tag-edit.jpg&quot; alt=&quot;お気に入りタグの編集画面&quot; /&gt;
+&lt;img src=&quot;/img/2016-05-23_pixiv-work-detail.jpg&quot; alt=&quot;作品詳細の画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作品詳細ページで付けられたタグが見れますよね。そこで良いなと思ったタグを「お気に入りタグ」にしようと思ったら、わざわざトップページに戻り手動で入力する必要があります。入力はコピペで代用できますが、これは非常に面倒です。その場で1クリックできたらいいなと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;人気タグのフィルター&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-popular-tag.jpg&quot; alt=&quot;人気のタグの画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;タグには面白いものや、シリーズのようなものなど、作品を探すのに便利なものまであります。これはpixivに限ったことではありません。新しいジャンルを知るのにも人気のタグを探せるのは便利です。ですが、現在の「人気のタグ」のページはキャラや作品名が多くて、便利なタグやジャンルを表したタグを探しにくいです。キャラクターや作品名の表示、非表示があれば便利なのになと思いました。&lt;/p&gt;
+
+&lt;p&gt;非常に読みにくい画面もどうかなと思います。今の人気順は横にいって、折り返す形になっています。これだと視線が「右→1段下」を細かい頻度で繰り返すことになり疲れます。それと行頭が揃っていないのも読みづらいかと。いっその事1カラムか2カラムで縦表示にした方が見るのも楽だと思います。今のままでもどのみちスクロールをする必要があるので。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-10&quot;&gt;コメント&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-11&quot;&gt;履歴が消える&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-comment.jpg&quot; alt=&quot;コメント履歴一覧の画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;何故かコメント履歴が1,2週間経つと消えていきます。コメント自体は消えているわけではないようです。&lt;a href=&quot;http://help.pixiv.net/216/&quot;&gt;ヘルプ&lt;/a&gt;にはプレミアムになると閲覧履歴をより多く表示と書いてあるだけ。過去のコメント履歴を見せないようにするのは、ユーザー間のトラブル時が起きた際にとても不便だと思います。それに自分がどれだけコメントしているか、コメントを返したかを確認するのにも使いたいです。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-12&quot;&gt;自分のコメントと相手のコメントが別画面にある&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-comment-split.jpg&quot; alt=&quot;コメントの履歴の比較&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;コメント履歴では自分からのコメントか見ることができません。一方、ポップボードでは相手からのコメントだけです。そのコメントの前後を見るには、クリックして飛ぶ必要があります。1個前の返信先となったコメントだけその場で表示できたら便利なのになと思います。あまり多いとかえって見づらいので。そこもオプションがあるといいですね。&lt;/p&gt;
+
+&lt;p&gt;有名な人は多くのコメントをもらうと思います。そして律儀に毎回返している人なんかは、返信していないコメントがパッとわかると楽かも。こういうコメントのしやすさをちょっとテコ入れすると、SNSとしてより流行るのではないかと思います。流行るというより交流が活発になるのかな。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-13&quot;&gt;編集ができない&lt;/h2&gt;
+
+&lt;p&gt;PCからもiPhoneアプリからも一度したコメントを編集することができません。編集したい場合は、一度コメントを削除して再度投稿する必要があります。これはちょっと不便です。&lt;/p&gt;
+
+&lt;h2 id=&quot;iphone&quot;&gt;iPhoneアプリからだと削除もできない！&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-iphone-comment.jpg&quot; alt=&quot;iPhoneからのコメント画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これはびっくりしました。コメントを編集するには一度削除して再投稿するしかありません。ですが、iPhoneアプリからでは削除ができないのです！&lt;/p&gt;
+
+&lt;h2 id=&quot;iphone-1&quot;&gt;iPhoneからだと新着コメントの確認ができない&lt;/h2&gt;
+
+&lt;p&gt;移動時間とかの隙間にコメント返しとか出来ると、ユーザーの交流が活発になると思います。ですが、iPhoneからだとコメント履歴も新着コメントの通知も見ることが出来ません。画像ビューアーとしての使い道だけに留めるのかな。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-14&quot;&gt;ポップボード&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-15&quot;&gt;表示件数とフィルター&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-pop-up-feed.jpg&quot; alt=&quot;ポップボード&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;コメントの通知やBOOTHの販売開始などの通知一覧が見れるのが&lt;a href=&quot;http://www.pixiv.net/notify_all.php&quot;&gt;ポップボード&lt;/a&gt;です。これは通知の&lt;strong&gt;一覧&lt;/strong&gt;、一覧が見れるはずなのに一度の表示は最新10件までのようです。一度にたくさんの通知を受け取ったことがないのでわかりませんが、10件以上を受け取っても表示が10件までだったとするととても不便なのではないかなと思いました。過去のが見れないのも不思議でした。&lt;/p&gt;
+
+&lt;p&gt;表示件数の少なさも不便を感じましたが、通知の種類によるフィルターやソートが効かないのも残念です。全ての通知からどれがコメントかを探さないといけません。たくさんコメントをもらっている方とかは大変だろうなと思います。コメント返しをしないけど、律儀にちゃんと全部読んでいる作家さんなんかはこの辺の改善だけでファンとのやりとりがスムーズになるかと。&lt;/p&gt;
+
+&lt;h1 id=&quot;spotlight&quot;&gt;Spotlight&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-spotlight-home.jpg&quot; alt=&quot;Spotlightのホーム画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Spotlightは色々なテーマで作品をまとめてくれるのでとても面白いです。テーマがとてもニッチなのが良いですね。ですが、過去の記事を探すのがめちゃくちゃ面倒な構成です。記事タイトル一覧だけで出して、どんなテーマがあるか探せれば十分なのですが、今の一覧画面は1記事がでかすぎて1Pに2記事のタイトルしか見ることができません。&lt;/p&gt;
+
+&lt;p&gt;関連記事だと6タイトル表示できるのに、メインの方はたったの2タイトル。とてももったいないなと思いました。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-16&quot;&gt;ブックマーク&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-17&quot;&gt;2回もクリックして2ページ移動&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-bookmarking.jpg&quot; alt=&quot;ブックマークの流れ&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「ブックマークに追加」をクリックするだけでは、追加されません。2ページも移動する必要があります。このせいでブックマークするのがすごく面倒です。せめて、2ページ目と3ページ目が逆だったらなと思います。先にブックマークして後からコメントやタグをを付ける形がいいと思います。非公開にするかはデフォルトをオプションで設定できるにするようにしたいです。&lt;/p&gt;
+
+&lt;p&gt;ユーザーをフォローするのも同じ仕様なのですが、これは作品詳細ページだけ。ユーザー一覧でカーソルを合わせた時に表示されるポップアップウィンドウでフォローすると、その場完了します。上記だけJavaScriptで非同期になっていないのです。iPhoneアプリだとブックマークも1タッチで出来ます。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、&lt;a href=&quot;https://chrome.google.com/webstore/detail/pixiv-supporter/adcipcbdiheoomhpkaofhkjadnfajgac?hl=ja&quot;&gt;私が作ったChrome拡張&lt;/a&gt;を使えば、完了画面から作品ページへ自動で戻るようになります。&lt;/p&gt;
+
+&lt;p&gt;ブックマークで一番良いのはDeviantArtという海外のSNSです。こちらは作品をドラッグアンドドロップするだけでフォルダ分けまで出来てしまいます。一度使ってみてください。クライアントアプリかと思える便利さですよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_deviantart-bookmarking.jpg&quot; alt=&quot;DeviantArtのブックマークの流れ&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-18&quot;&gt;選択するチェックボックスが小さい&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-23_pixiv-my-bookmark.jpg&quot; alt=&quot;自分のブックマークの画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;わざわざカーソルを小さいチェックボックスに合わせるのは神経を使います。もっと気楽にぱぱっと選択したいです。&lt;a href=&quot;https://chrome.google.com/webstore/detail/pixiv-supporter/adcipcbdiheoomhpkaofhkjadnfajgac?hl=ja&quot;&gt;私が作ったChrome拡張&lt;/a&gt;を使えば、サムネイルをクリックすれば選択できるようになります。このようなのはJavaScriptで拡張できますが、検索結果などAPIが必要な物は難しいですね。公式が機能を充実してくれると良いですね。&lt;/p&gt;
+
+&lt;h2 id=&quot;iphone-2&quot;&gt;iPhoneでのフォルダ分け&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/2016-05-24_pixiv-iphone-work.jpg&quot; alt=&quot;iPhoneでの作品詳細画面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フォルダ分けがぱっとできるようになると便利そうですね。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 May 2016 21:36:43 +0900</pubDate>
+        <link>http://mitsuru793.github.io/2016/05/23/pixiv.html</link>
+        <guid isPermaLink="true">http://mitsuru793.github.io/2016/05/23/pixiv.html</guid>
+        
+        
+      </item>
+    
   </channel>
 </rss>
